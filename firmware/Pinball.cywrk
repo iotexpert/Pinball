@@ -12,7 +12,7 @@
 <v>.\Testfit.cydsn\Testfit.cyprj</v>
 <v>.\TestMatrix.cydsn\TestMatrix.cyprj</v>
 <v>.\TestLedBlinking.cydsn\TestLedBlinking.cyprj</v>
-<v>.\TestMatrixCapsense.cydsn\TestMatrixCapsense.cyprj</v>
+<v>.\TestLedGPIO.cydsn\TestLedGPIO.cyprj</v>
 </projects>
 <workspace_id v="db543bb6-711e-4392-8e30-366fb602eeaf" />
 <WriteAppVersionLastSavedWith v="3.3.0.9604" />
