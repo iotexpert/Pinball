@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 4s.945ms
+Loading plugins phase: Elapsed time ==> 0s.249ms
 Initializing data phase: Elapsed time ==> 0s.000ms
 <CYPRESSTAG name="CyDsfit arguments...">
-cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p \\vmware-host\Shared Folders\Documents\Pinball\firmware\TestMatrix.cydsn\TestMatrix.cyprj -d CY8C4247AZI-M485 -s \\vmware-host\Shared Folders\Documents\Pinball\firmware\TestMatrix.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p \\vmware-host\Shared Folders\Documents\Pinball\firmware\TestLedBlinking.cydsn\TestLedBlinking.cyprj -d CY8C4247AZI-M485 -s \\vmware-host\Shared Folders\Documents\Pinball\firmware\TestLedBlinking.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 3s.135ms
+Elaboration phase: Elapsed time ==> 1s.325ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.062ms
+HDL generation phase: Elapsed time ==> 0s.046ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -23,35 +23,35 @@ HDL generation phase: Elapsed time ==> 0s.062ms
      | | | | | | |
 
 ======================================================================
-Compiling:  TestMatrix.v
+Compiling:  TestLedBlinking.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\bin/warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestMatrix.cydsn\TestMatrix.cyprj -dcpsoc3 TestMatrix.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestLedBlinking.cydsn\TestLedBlinking.cyprj -dcpsoc3 TestLedBlinking.v -verilog
 ======================================================================
 
 ======================================================================
-Compiling:  TestMatrix.v
+Compiling:  TestLedBlinking.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\bin/warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestMatrix.cydsn\TestMatrix.cyprj -dcpsoc3 TestMatrix.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestLedBlinking.cydsn\TestLedBlinking.cyprj -dcpsoc3 TestLedBlinking.v -verilog
 ======================================================================
 
 ======================================================================
-Compiling:  TestMatrix.v
+Compiling:  TestLedBlinking.v
 Program  :   vlogfe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestMatrix.cydsn\TestMatrix.cyprj -dcpsoc3 -verilog TestMatrix.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestLedBlinking.cydsn\TestLedBlinking.cyprj -dcpsoc3 -verilog TestLedBlinking.v
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Sat Aug 13 09:33:40 2016
+Fri Aug 12 12:54:08 2016
 
 
 ======================================================================
-Compiling:  TestMatrix.v
+Compiling:  TestLedBlinking.v
 Program  :   vpp
-Options  :    -yv2 -q10 TestMatrix.v
+Options  :    -yv2 -q10 TestLedBlinking.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Sat Aug 13 09:33:40 2016
+Fri Aug 12 12:54:08 2016
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'
@@ -71,19 +71,19 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Using control file 'TestMatrix.ctl'.
+Using control file 'TestLedBlinking.ctl'.
 
 vlogfe:  No errors.
 
 
 ======================================================================
-Compiling:  TestMatrix.v
+Compiling:  TestLedBlinking.v
 Program  :   tovif
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestMatrix.cydsn\TestMatrix.cyprj -dcpsoc3 -verilog TestMatrix.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestLedBlinking.cydsn\TestLedBlinking.cyprj -dcpsoc3 -verilog TestLedBlinking.v
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Sat Aug 13 09:33:40 2016
+Fri Aug 12 12:54:08 2016
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -94,9 +94,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking '\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestMatrix.cydsn\codegentemp\TestMatrix.ctl'.
+Linking '\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestLedBlinking.cydsn\codegentemp\TestLedBlinking.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
-Linking '\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestMatrix.cydsn\codegentemp\TestMatrix.v'.
+Linking '\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestLedBlinking.cydsn\codegentemp\TestLedBlinking.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
 
@@ -104,13 +104,13 @@ tovif:  No errors.
 
 
 ======================================================================
-Compiling:  TestMatrix.v
+Compiling:  TestLedBlinking.v
 Program  :   topld
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestMatrix.cydsn\TestMatrix.cyprj -dcpsoc3 -verilog TestMatrix.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestLedBlinking.cydsn\TestLedBlinking.cyprj -dcpsoc3 -verilog TestLedBlinking.v
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Sat Aug 13 09:33:41 2016
+Fri Aug 12 12:54:08 2016
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -121,9 +121,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking '\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestMatrix.cydsn\codegentemp\TestMatrix.ctl'.
+Linking '\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestLedBlinking.cydsn\codegentemp\TestLedBlinking.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
-Linking '\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestMatrix.cydsn\codegentemp\TestMatrix.v'.
+Linking '\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestLedBlinking.cydsn\codegentemp\TestLedBlinking.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\lcpsoc3\stdlogic\cpsoc3.vif'.
@@ -166,28 +166,24 @@ Aliasing \UART:miso_m_wire\ to zero
 Aliasing \UART:tmpOE__tx_net_0\ to tmpOE__row_net_2
 Aliasing \UART:tmpOE__rx_net_0\ to tmpOE__row_net_2
 Aliasing \UART:cts_wire\ to zero
-Aliasing tmpOE__High_net_0 to tmpOE__row_net_2
-Aliasing tmpOE__Low_net_0 to tmpOE__row_net_2
 Removing Lhs of wire tmpOE__row_net_1[2] = tmpOE__row_net_2[1]
 Removing Lhs of wire tmpOE__row_net_0[3] = tmpOE__row_net_2[1]
-Removing Lhs of wire one[15] = tmpOE__row_net_2[1]
-Removing Lhs of wire tmpOE__col_net_2[18] = tmpOE__row_net_2[1]
-Removing Lhs of wire tmpOE__col_net_1[19] = tmpOE__row_net_2[1]
-Removing Lhs of wire tmpOE__col_net_0[20] = tmpOE__row_net_2[1]
-Removing Lhs of wire \UART:select_s_wire\[34] = zero[4]
-Removing Rhs of wire \UART:rx_wire\[35] = \UART:Net_1268\[36]
-Removing Lhs of wire \UART:Net_1170\[39] = \UART:Net_847\[33]
-Removing Lhs of wire \UART:sclk_s_wire\[40] = zero[4]
-Removing Lhs of wire \UART:mosi_s_wire\[41] = zero[4]
-Removing Lhs of wire \UART:miso_m_wire\[42] = zero[4]
-Removing Lhs of wire \UART:tmpOE__tx_net_0\[44] = tmpOE__row_net_2[1]
-Removing Lhs of wire \UART:tmpOE__rx_net_0\[53] = tmpOE__row_net_2[1]
-Removing Lhs of wire \UART:cts_wire\[57] = zero[4]
-Removing Lhs of wire tmpOE__High_net_0[116] = tmpOE__row_net_2[1]
-Removing Lhs of wire tmpOE__Low_net_0[122] = tmpOE__row_net_2[1]
+Removing Lhs of wire one[12] = tmpOE__row_net_2[1]
+Removing Lhs of wire tmpOE__col_net_2[15] = tmpOE__row_net_2[1]
+Removing Lhs of wire tmpOE__col_net_1[16] = tmpOE__row_net_2[1]
+Removing Lhs of wire tmpOE__col_net_0[17] = tmpOE__row_net_2[1]
+Removing Lhs of wire \UART:select_s_wire\[28] = zero[4]
+Removing Rhs of wire \UART:rx_wire\[29] = \UART:Net_1268\[30]
+Removing Lhs of wire \UART:Net_1170\[33] = \UART:Net_847\[27]
+Removing Lhs of wire \UART:sclk_s_wire\[34] = zero[4]
+Removing Lhs of wire \UART:mosi_s_wire\[35] = zero[4]
+Removing Lhs of wire \UART:miso_m_wire\[36] = zero[4]
+Removing Lhs of wire \UART:tmpOE__tx_net_0\[38] = tmpOE__row_net_2[1]
+Removing Lhs of wire \UART:tmpOE__rx_net_0\[47] = tmpOE__row_net_2[1]
+Removing Lhs of wire \UART:cts_wire\[51] = zero[4]
 
 ------------------------------------------------------
-Aliased 0 equations, 17 wires.
+Aliased 0 equations, 15 wires.
 ------------------------------------------------------
 
 ----------------------------------------------------------
@@ -209,13 +205,13 @@ topld:  No errors.
 
 CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\bin/warp.exe
-Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestMatrix.cydsn\TestMatrix.cyprj" -dcpsoc3 TestMatrix.v -verilog
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestLedBlinking.cydsn\TestLedBlinking.cyprj" -dcpsoc3 TestLedBlinking.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 0s.343ms
+Warp synthesis phase: Elapsed time ==> 0s.296ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V3.3.0.9604, Family: PSoC3, Started at: Saturday, 13 August 2016 09:33:41
-Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestMatrix.cydsn\TestMatrix.cyprj -d CY8C4247AZI-M485 TestMatrix.v -verilog
+cyp3fit: V3.3.0.9604, Family: PSoC3, Started at: Friday, 12 August 2016 12:54:08
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestLedBlinking.cydsn\TestLedBlinking.cyprj -d CY8C4247AZI-M485 TestLedBlinking.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
 Design parsing phase: Elapsed time ==> 0s.015ms
@@ -227,8 +223,6 @@ Design parsing phase: Elapsed time ==> 0s.015ms
 <CYPRESSTAG name="UDB Clock/Enable Remapping Results">
 </CYPRESSTAG>
 </CYPRESSTAG>
-ADD: pft.M0040: information: The following 2 pin(s) will be assigned a location by the fitter: High(0), Low(0)
-
 
 Removing unused cells resulting from optimization
 Done removing unused cells.
@@ -282,7 +276,6 @@ Design Equations
             IO Voltage: 0
         PORT MAP (
             pa_out => row(0)__PA ,
-            annotation => Net_65 ,
             pad => row(0)_PAD );
         Properties:
         {
@@ -322,7 +315,6 @@ Design Equations
             IO Voltage: 0
         PORT MAP (
             pa_out => row(1)__PA ,
-            annotation => Net_95 ,
             pad => row(1)_PAD );
         Properties:
         {
@@ -362,7 +354,6 @@ Design Equations
             IO Voltage: 0
         PORT MAP (
             pa_out => row(2)__PA ,
-            annotation => Net_83 ,
             pad => row(2)_PAD );
         Properties:
         {
@@ -402,7 +393,6 @@ Design Equations
             IO Voltage: 0
         PORT MAP (
             pa_out => col(0)__PA ,
-            annotation => Net_68 ,
             pad => col(0)_PAD );
         Properties:
         {
@@ -442,7 +432,6 @@ Design Equations
             IO Voltage: 0
         PORT MAP (
             pa_out => col(1)__PA ,
-            annotation => Net_69 ,
             pad => col(1)_PAD );
         Properties:
         {
@@ -482,7 +471,6 @@ Design Equations
             IO Voltage: 0
         PORT MAP (
             pa_out => col(2)__PA ,
-            annotation => Net_70 ,
             pad => col(2)_PAD );
         Properties:
         {
@@ -567,80 +555,6 @@ Design Equations
         Properties:
         {
         }
-
-    Pin : Name = High(0)
-        Attributes:
-            In Group/Port: True
-            In Sync Option: AUTO
-            Out Sync Option: NOSYNC
-            Interrupt generated: False
-            Interrupt mode: NONE
-            Drive mode: CMOS_OUT
-            VTrip: EITHER
-            Slew: FAST
-            Input Sync needed: False
-            Output Sync needed: False
-            SC shield enabled: False
-            POR State: ANY
-            LCD Mode: COMMON
-            Register Mode: RegComb
-            CaSense Mode: NEITHER
-            Treat as pin: True
-            Is OE Registered: False
-            Uses Analog: False
-            Can contain Digital: True
-            Is SIO: False
-            SIO Output Buf: NONREGULATED
-            SIO Input Buf: SINGLE_ENDED
-            SIO HiFreq: LOW
-            SIO Hyst: DISABLED
-            SIO Vtrip: MULTIPLIER_0_5
-            SIO Multiplier Index: 0
-            SIO RefSel: VCC_IO
-            Required Capabilitites: DIGITAL
-            Initial Value: 1
-            IO Voltage: 0
-        PORT MAP (
-            pa_out => High(0)__PA ,
-            annotation => Net_119 ,
-            pad => High(0)_PAD );
-
-    Pin : Name = Low(0)
-        Attributes:
-            In Group/Port: True
-            In Sync Option: AUTO
-            Out Sync Option: NOSYNC
-            Interrupt generated: False
-            Interrupt mode: NONE
-            Drive mode: CMOS_OUT
-            VTrip: EITHER
-            Slew: FAST
-            Input Sync needed: False
-            Output Sync needed: False
-            SC shield enabled: False
-            POR State: ANY
-            LCD Mode: COMMON
-            Register Mode: RegComb
-            CaSense Mode: NEITHER
-            Treat as pin: True
-            Is OE Registered: False
-            Uses Analog: False
-            Can contain Digital: True
-            Is SIO: False
-            SIO Output Buf: NONREGULATED
-            SIO Input Buf: SINGLE_ENDED
-            SIO HiFreq: LOW
-            SIO Hyst: DISABLED
-            SIO Vtrip: MULTIPLIER_0_5
-            SIO Multiplier Index: 0
-            SIO RefSel: VCC_IO
-            Required Capabilitites: DIGITAL
-            Initial Value: 0
-            IO Voltage: 0
-        PORT MAP (
-            pa_out => Low(0)__PA ,
-            annotation => Net_117 ,
-            pad => Low(0)_PAD );
     </CYPRESSTAG>
     <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
     </CYPRESSTAG>
@@ -671,7 +585,7 @@ Resource Type                 : Used : Free :  Max :  % Used
 ============================================================
 Digital Clocks                :    0 :    4 :    4 :  0.00 %
 Interrupts                    :    0 :   32 :   32 :  0.00 %
-IO                            :   12 :   39 :   51 : 23.53 %
+IO                            :   10 :   41 :   51 : 19.61 %
 Segment LCD                   :    0 :    1 :    1 :  0.00 %
 CapSense                      :    0 :    2 :    2 :  0.00 %
 Die Temp                      :    0 :    1 :    1 :  0.00 %
@@ -698,13 +612,13 @@ Tech mapping phase: Elapsed time ==> 0s.046ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="Analog Placement">
-Elapsed time ==> 0.3000232s
+Elapsed time ==> 0.2848728s
 </CYPRESSTAG>
 Analog Placement phase: Elapsed time ==> 0s.530ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0007846 secs
+Route success=True, Iterations=1 Elapsed=0.0008378 secs
 </CYPRESSTAG>
 Analog Routing phase: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
@@ -765,89 +679,7 @@ UDB [UDB=(1,0)] is empty.
 UDB [UDB=(1,1)] is empty.
 Intr container @ [IntrContainer=(0)]: empty
 Drq container @ [DrqContainer=(0)]: empty
-Port 0 contains the following IO cells:
-[IoId=0]: 
-Pin : Name = High(0)
-    Attributes:
-        In Group/Port: True
-        In Sync Option: AUTO
-        Out Sync Option: NOSYNC
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: CMOS_OUT
-        VTrip: EITHER
-        Slew: FAST
-        Input Sync needed: False
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: ANY
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: True
-        Is OE Registered: False
-        Uses Analog: False
-        Can contain Digital: True
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO Multiplier Index: 0
-        SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
-        Initial Value: 1
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => High(0)__PA ,
-        annotation => Net_119 ,
-        pad => High(0)_PAD );
-    Properties:
-    {
-    }
-
-[IoId=1]: 
-Pin : Name = Low(0)
-    Attributes:
-        In Group/Port: True
-        In Sync Option: AUTO
-        Out Sync Option: NOSYNC
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: CMOS_OUT
-        VTrip: EITHER
-        Slew: FAST
-        Input Sync needed: False
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: ANY
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: True
-        Is OE Registered: False
-        Uses Analog: False
-        Can contain Digital: True
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO Multiplier Index: 0
-        SIO RefSel: VCC_IO
-        Required Capabilitites: DIGITAL
-        Initial Value: 0
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => Low(0)__PA ,
-        annotation => Net_117 ,
-        pad => Low(0)_PAD );
-    Properties:
-    {
-    }
-
+Port 0 is empty
 Port 1 is empty
 Port 2 contains the following IO cells:
 [IoId=0]: 
@@ -885,7 +717,6 @@ Pin : Name = row(0)
         IO Voltage: 0
     PORT MAP (
         pa_out => row(0)__PA ,
-        annotation => Net_65 ,
         pad => row(0)_PAD );
     Properties:
     {
@@ -926,7 +757,6 @@ Pin : Name = row(1)
         IO Voltage: 0
     PORT MAP (
         pa_out => row(1)__PA ,
-        annotation => Net_95 ,
         pad => row(1)_PAD );
     Properties:
     {
@@ -967,7 +797,6 @@ Pin : Name = row(2)
         IO Voltage: 0
     PORT MAP (
         pa_out => row(2)__PA ,
-        annotation => Net_83 ,
         pad => row(2)_PAD );
     Properties:
     {
@@ -1008,7 +837,6 @@ Pin : Name = col(0)
         IO Voltage: 0
     PORT MAP (
         pa_out => col(0)__PA ,
-        annotation => Net_68 ,
         pad => col(0)_PAD );
     Properties:
     {
@@ -1049,7 +877,6 @@ Pin : Name = col(1)
         IO Voltage: 0
     PORT MAP (
         pa_out => col(1)__PA ,
-        annotation => Net_69 ,
         pad => col(1)_PAD );
     Properties:
     {
@@ -1090,7 +917,6 @@ Pin : Name = col(2)
         IO Voltage: 0
     PORT MAP (
         pa_out => col(2)__PA ,
-        annotation => Net_70 ,
         pad => col(2)_PAD );
     Properties:
     {
@@ -1259,9 +1085,6 @@ Port Configuration report
      |     |       | Interrupt |                  |              | 
 Port | Pin | Fixed |      Type |       Drive Mode |         Name | Connections
 -----+-----+-------+-----------+------------------+--------------+-------------------
-   0 |   0 |       |      NONE |         CMOS_OUT |      High(0) | 
-     |   1 |       |      NONE |         CMOS_OUT |       Low(0) | 
------+-----+-------+-----------+------------------+--------------+-------------------
    2 |   0 |     * |      NONE |         CMOS_OUT |       row(0) | 
      |   1 |     * |      NONE |         CMOS_OUT |       row(1) | 
      |   2 |     * |      NONE |         CMOS_OUT |       row(2) | 
@@ -1276,31 +1099,31 @@ Port | Pin | Fixed |      Type |       Drive Mode |         Name | Connections
 </CYPRESSTAG>
 </CYPRESSTAG>
 Digital component placer commit/Report: Elapsed time ==> 0s.000ms
-Digital Placement phase: Elapsed time ==> 0s.592ms
+Digital Placement phase: Elapsed time ==> 0s.545ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 Routing successful.
-Digital Routing phase: Elapsed time ==> 0s.608ms
+Digital Routing phase: Elapsed time ==> 1s.013ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream and API generation">
-Bitstream and API generation phase: Elapsed time ==> 0s.327ms
+Bitstream and API generation phase: Elapsed time ==> 0s.296ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream verification">
 Bitstream verification phase: Elapsed time ==> 0s.031ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
-Timing report is in TestMatrix_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.141ms
+Timing report is in TestLedBlinking_timing.html.
+Static timing analysis phase: Elapsed time ==> 0s.140ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.143ms
+Design database save phase: Elapsed time ==> 0s.124ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 2s.519ms
+cydsfit: Elapsed time ==> 2s.807ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 2s.566ms
-API generation phase: Elapsed time ==> 2s.386ms
-Dependency generation phase: Elapsed time ==> 0s.046ms
+Fitter phase: Elapsed time ==> 2s.854ms
+API generation phase: Elapsed time ==> 2s.464ms
+Dependency generation phase: Elapsed time ==> 0s.031ms
 Cleanup phase: Elapsed time ==> 0s.015ms
