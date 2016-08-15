@@ -2,8 +2,8 @@
 #include "led.h"
 
 // These two need to be less than 8
-#define MatrixLed_NUMROWS (3)
-#define MatrixLed_NUMCOLS (3)
+#define MatrixLed_NUMROWS (4)
+#define MatrixLed_NUMCOLS (4)
 
 // number of systicks to cycle the refresh LEDs ... hopefully systick is 1 ms
 // which means each row gets updated every 3*5ms = 15ms or 
@@ -16,12 +16,14 @@ static uint8 MatrixLed_ledRows[MatrixLed_NUMROWS];
 // an array of the states ... used for blinking
 static MatrixLed_LedState MatrixLed_ledStates[MatrixLed_NUMROWS][MatrixLed_NUMCOLS];
 
+
 // 10hz update frequency
 //  = 1000 / 10hz = 100ms
 // half period = 100ms / 2 = 50 ms
 // toggle clock ticks = 50ms/refresh = 5
 //  ledTogglePeriods is the reset value for the software PWM
-static int MatrixLed_ledTogglePeriods[MatrixLed_NUMROWS][MatrixLed_NUMCOLS]; // ltp = 1000/2/freq/refresh (what to reset to)
+// ltp = 1000/2/freq/refresh (what to reset to)
+static int MatrixLed_ledTogglePeriods[MatrixLed_NUMROWS][MatrixLed_NUMCOLS]; 
 // ledCurrentCount is the counter for the PWM
 static int MatrixLed_ledCurrentCount[MatrixLed_NUMROWS][MatrixLed_NUMCOLS]; // downcounter for toggles 
 
@@ -109,8 +111,10 @@ static void MatrixLed_RunStateMachine()
     // This is essentially a prescaler
     if(MatrixLed_sysTickCount % MatrixLed_REFRESH) 
         return;
+    IntService_Write(1);
     MatrixLed_UpdateBlinkingLeds();
     MatrixLed_UpdateLeds();
+    IntService_Write(0);
 }
 
 // This is the main start function

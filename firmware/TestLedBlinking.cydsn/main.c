@@ -36,12 +36,19 @@ int main()
 	            MatrixLed_Enable(0,0);
 	            MatrixLed_Enable(0,1);
 	            MatrixLed_Enable(0,2);
+                MatrixLed_Enable(0,3);
 	            MatrixLed_Enable(1,0);
 	            MatrixLed_Enable(1,1);
 	            MatrixLed_Enable(1,2);
+                MatrixLed_Enable(1,3);
 	            MatrixLed_Enable(2,0);
 	            MatrixLed_Enable(2,1);
 	            MatrixLed_Enable(2,2);
+                MatrixLed_Enable(2,3);
+                MatrixLed_Enable(3,0);
+	            MatrixLed_Enable(3,1);
+	            MatrixLed_Enable(3,2);
+                MatrixLed_Enable(3,3);
 	        break;
                 
             case 'A':
