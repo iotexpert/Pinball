@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.171ms
+Loading plugins phase: Elapsed time ==> 0s.312ms
 Initializing data phase: Elapsed time ==> 0s.000ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p \\vmware-host\Shared Folders\Documents\Pinball\firmware\TestLedGPIO.cydsn\TestLedGPIO.cyprj -d CY8C4247AZI-M485 -s \\vmware-host\Shared Folders\Documents\Pinball\firmware\TestLedGPIO.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 0s.374ms
+Elaboration phase: Elapsed time ==> 0s.453ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.046ms
+HDL generation phase: Elapsed time ==> 0s.031ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -41,7 +41,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Wed Aug 10 08:21:44 2016
+Tue Aug 16 08:17:46 2016
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 TestLedGPIO.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Wed Aug 10 08:21:44 2016
+Tue Aug 16 08:17:46 2016
 
 
 vpp:  No errors.
@@ -80,7 +80,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Wed Aug 10 08:21:44 2016
+Tue Aug 16 08:17:46 2016
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -104,7 +104,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Wed Aug 10 08:21:44 2016
+Tue Aug 16 08:17:46 2016
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -130,8 +130,8 @@ Alias Detection
 ------------------------------------------------------
 Aliasing one to tmpOE__TestPinVcc_net_0
 Aliasing tmpOE__TestPinGnd_net_0 to tmpOE__TestPinVcc_net_0
-Removing Lhs of wire one[9] = tmpOE__TestPinVcc_net_0[4]
-Removing Lhs of wire tmpOE__TestPinGnd_net_0[12] = tmpOE__TestPinVcc_net_0[4]
+Removing Lhs of wire one[10] = tmpOE__TestPinVcc_net_0[4]
+Removing Lhs of wire tmpOE__TestPinGnd_net_0[13] = tmpOE__TestPinVcc_net_0[4]
 
 ------------------------------------------------------
 Aliased 0 equations, 2 wires.
@@ -158,14 +158,14 @@ CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\wa
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\bin/warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestLedGPIO.cydsn\TestLedGPIO.cyprj" -dcpsoc3 TestLedGPIO.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 0s.218ms
+Warp synthesis phase: Elapsed time ==> 0s.625ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V3.3.0.9604, Family: PSoC3, Started at: Wednesday, 10 August 2016 08:21:44
+cyp3fit: V3.3.0.9604, Family: PSoC3, Started at: Tuesday, 16 August 2016 08:17:47
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\Shared Folders\Documents\Pinball\firmware\TestLedGPIO.cydsn\TestLedGPIO.cyprj -d CY8C4247AZI-M485 TestLedGPIO.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.015ms
+Design parsing phase: Elapsed time ==> 0s.046ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -223,7 +223,7 @@ Design Equations
             IO Voltage: 0
         PORT MAP (
             pa_out => TestPinVcc(0)__PA ,
-            annotation => Net_5 ,
+            annotation => Net_7 ,
             pad => TestPinVcc(0)_PAD );
         Properties:
         {
@@ -263,7 +263,7 @@ Design Equations
             IO Voltage: 0
         PORT MAP (
             pa_out => TestPinGnd(0)__PA ,
-            annotation => Net_3 ,
+            annotation => Net_9 ,
             pad => TestPinGnd(0)_PAD );
         Properties:
         {
@@ -320,18 +320,18 @@ DAC                           :      :      :      :
   7-bit IDAC                  :    0 :    2 :    2 :  0.00 %
   8-bit IDAC                  :    0 :    2 :    2 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.015ms
-Tech mapping phase: Elapsed time ==> 0s.046ms
+Technology Mapping: Elapsed time ==> 0s.000ms
+Tech mapping phase: Elapsed time ==> 0s.062ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="Analog Placement">
-Elapsed time ==> 0.2886598s
+Elapsed time ==> 0.3372387s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 0s.483ms
+Analog Placement phase: Elapsed time ==> 0s.624ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0009305 secs
+Route success=True, Iterations=1 Elapsed=0.0009754 secs
 </CYPRESSTAG>
 Analog Routing phase: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
@@ -344,7 +344,7 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.046ms
+Analog Code Generation phase: Elapsed time ==> 0s.062ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
@@ -430,7 +430,7 @@ Pin : Name = TestPinVcc(0)
         IO Voltage: 0
     PORT MAP (
         pa_out => TestPinVcc(0)__PA ,
-        annotation => Net_5 ,
+        annotation => Net_7 ,
         pad => TestPinVcc(0)_PAD );
     Properties:
     {
@@ -471,7 +471,7 @@ Pin : Name = TestPinGnd(0)
         IO Voltage: 0
     PORT MAP (
         pa_out => TestPinGnd(0)__PA ,
-        annotation => Net_3 ,
+        annotation => Net_9 ,
         pad => TestPinGnd(0)_PAD );
     Properties:
     {
@@ -542,31 +542,31 @@ Port | Pin | Fixed |      Type |       Drive Mode |          Name | Connections
 </CYPRESSTAG>
 </CYPRESSTAG>
 Digital component placer commit/Report: Elapsed time ==> 0s.000ms
-Digital Placement phase: Elapsed time ==> 0s.358ms
+Digital Placement phase: Elapsed time ==> 0s.562ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 Routing successful.
-Digital Routing phase: Elapsed time ==> 0s.561ms
+Digital Routing phase: Elapsed time ==> 0s.765ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream and API generation">
-Bitstream and API generation phase: Elapsed time ==> 0s.296ms
+Bitstream and API generation phase: Elapsed time ==> 0s.374ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream verification">
-Bitstream verification phase: Elapsed time ==> 0s.015ms
+Bitstream verification phase: Elapsed time ==> 0s.031ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in TestLedGPIO_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.140ms
+Static timing analysis phase: Elapsed time ==> 0s.265ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.109ms
+Design database save phase: Elapsed time ==> 0s.156ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 2s.105ms
+cydsfit: Elapsed time ==> 2s.984ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 2s.152ms
-API generation phase: Elapsed time ==> 1s.310ms
-Dependency generation phase: Elapsed time ==> 0s.031ms
-Cleanup phase: Elapsed time ==> 0s.015ms
+Fitter phase: Elapsed time ==> 3s.046ms
+API generation phase: Elapsed time ==> 1s.734ms
+Dependency generation phase: Elapsed time ==> 0s.062ms
+Cleanup phase: Elapsed time ==> 0s.062ms

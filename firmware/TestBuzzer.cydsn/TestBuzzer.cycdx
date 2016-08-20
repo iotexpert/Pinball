@@ -1,68 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <blockRegMap version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cypress.com/xsd/cyblockregmap cyblockregmap.xsd" xmlns="http://cypress.com/xsd/cyblockregmap">
-  <block name="PWM" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-    <block name="cy_m0s8_tcpwm_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="VMux_reload" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="VMux_count" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="VMux_start" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="VMux_capture" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="VMux_stop" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="VMux_clock" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <register name="COUNTER" address="0x40200248" bitWidth="32" desc="Current counter value" hidden="false" />
-    <register name="CC" address="0x4020024C" bitWidth="32" desc="Compare / capture value" hidden="false" />
-    <register name="CC_BUF" address="0x40200250" bitWidth="32" desc="Compare / capture buffer value" hidden="false" />
-    <register name="PERIOD" address="0x40200254" bitWidth="32" desc="Period value" hidden="false" />
-    <register name="PERIOD_BUF" address="0x40200258" bitWidth="32" desc="Period buffer value" hidden="false" />
-  </block>
-  <block name="Buzzer" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Clock_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="DMAC" BASE="0x0" SIZE="0x0" desc="DMAC Registers" visible="true" hidden="false">
-    <register name="DMAC_CH_CTL16" address="0x40000000" bitWidth="32" desc="DMA channel 16 control register" hidden="true">
-      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
-        <value name="Disabled" value="0" desc="Channel is currently disabled." />
-        <value name="Enabled" value="1" desc="Channel is currently enabled." />
-      </field>
-      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
-        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
-        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
-      </field>
-      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
-    </register>
-    <register name="DMAC_CH_CTL12" address="0x40000000" bitWidth="32" desc="DMA channel 12 control register" hidden="true">
-      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
-        <value name="Disabled" value="0" desc="Channel is currently disabled." />
-        <value name="Enabled" value="1" desc="Channel is currently enabled." />
-      </field>
-      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
-        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
-        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
-      </field>
-      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
-    </register>
-    <register name="DMAC_CH_CTL11" address="0x40000000" bitWidth="32" desc="DMA channel 11 control register" hidden="true">
-      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
-        <value name="Disabled" value="0" desc="Channel is currently disabled." />
-        <value name="Enabled" value="1" desc="Channel is currently enabled." />
-      </field>
-      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
-        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
-        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
-      </field>
-      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
-    </register>
-    <register name="DMAC_CH_CTL10" address="0x40000000" bitWidth="32" desc="DMA channel 10 control register" hidden="true">
-      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
-        <value name="Disabled" value="0" desc="Channel is currently disabled." />
-        <value name="Enabled" value="1" desc="Channel is currently enabled." />
-      </field>
-      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
-        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
-        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
-      </field>
-      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
-    </register>
-    <register name="DMAC_CH_CTL9" address="0x40000000" bitWidth="32" desc="DMA channel 9 control register" hidden="true">
+    <register name="DMAC_CH_CTL17" address="0x40000000" bitWidth="32" desc="DMA channel 17 control register" hidden="true">
       <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
         <value name="Disabled" value="0" desc="Channel is currently disabled." />
         <value name="Enabled" value="1" desc="Channel is currently enabled." />
@@ -84,40 +24,7 @@
       </field>
       <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
     </register>
-    <register name="DMAC_CH_CTL15" address="0x40000000" bitWidth="32" desc="DMA channel 15 control register" hidden="true">
-      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
-        <value name="Disabled" value="0" desc="Channel is currently disabled." />
-        <value name="Enabled" value="1" desc="Channel is currently enabled." />
-      </field>
-      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
-        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
-        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
-      </field>
-      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
-    </register>
-    <register name="DMAC_CH_CTL17" address="0x40000000" bitWidth="32" desc="DMA channel 17 control register" hidden="true">
-      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
-        <value name="Disabled" value="0" desc="Channel is currently disabled." />
-        <value name="Enabled" value="1" desc="Channel is currently enabled." />
-      </field>
-      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
-        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
-        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
-      </field>
-      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
-    </register>
-    <register name="DMAC_CH_CTL18" address="0x40000000" bitWidth="32" desc="DMA channel 18 control register" hidden="true">
-      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
-        <value name="Disabled" value="0" desc="Channel is currently disabled." />
-        <value name="Enabled" value="1" desc="Channel is currently enabled." />
-      </field>
-      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
-        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
-        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
-      </field>
-      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
-    </register>
-    <register name="DMAC_CH_CTL19" address="0x40000000" bitWidth="32" desc="DMA channel 19 control register" hidden="true">
+    <register name="DMAC_CH_CTL9" address="0x40000000" bitWidth="32" desc="DMA channel 9 control register" hidden="true">
       <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
         <value name="Disabled" value="0" desc="Channel is currently disabled." />
         <value name="Enabled" value="1" desc="Channel is currently enabled." />
@@ -139,7 +46,7 @@
       </field>
       <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
     </register>
-    <register name="DMAC_CH_CTL21" address="0x40000000" bitWidth="32" desc="DMA channel 21 control register" hidden="true">
+    <register name="DMAC_CH_CTL19" address="0x40000000" bitWidth="32" desc="DMA channel 19 control register" hidden="true">
       <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
         <value name="Disabled" value="0" desc="Channel is currently disabled." />
         <value name="Enabled" value="1" desc="Channel is currently enabled." />
@@ -150,106 +57,7 @@
       </field>
       <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
     </register>
-    <register name="DMAC_CH_CTL22" address="0x40000000" bitWidth="32" desc="DMA channel 22 control register" hidden="true">
-      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
-        <value name="Disabled" value="0" desc="Channel is currently disabled." />
-        <value name="Enabled" value="1" desc="Channel is currently enabled." />
-      </field>
-      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
-        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
-        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
-      </field>
-      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
-    </register>
-    <register name="DMAC_CH_CTL23" address="0x40000000" bitWidth="32" desc="DMA channel 23 control register" hidden="true">
-      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
-        <value name="Disabled" value="0" desc="Channel is currently disabled." />
-        <value name="Enabled" value="1" desc="Channel is currently enabled." />
-      </field>
-      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
-        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
-        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
-      </field>
-      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
-    </register>
-    <register name="DMAC_CH_CTL24" address="0x40000000" bitWidth="32" desc="DMA channel 24 control register" hidden="true">
-      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
-        <value name="Disabled" value="0" desc="Channel is currently disabled." />
-        <value name="Enabled" value="1" desc="Channel is currently enabled." />
-      </field>
-      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
-        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
-        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
-      </field>
-      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
-    </register>
-    <register name="DMAC_CH_CTL25" address="0x40000000" bitWidth="32" desc="DMA channel 25 control register" hidden="true">
-      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
-        <value name="Disabled" value="0" desc="Channel is currently disabled." />
-        <value name="Enabled" value="1" desc="Channel is currently enabled." />
-      </field>
-      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
-        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
-        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
-      </field>
-      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
-    </register>
-    <register name="DMAC_CH_CTL26" address="0x40000000" bitWidth="32" desc="DMA channel 26 control register" hidden="true">
-      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
-        <value name="Disabled" value="0" desc="Channel is currently disabled." />
-        <value name="Enabled" value="1" desc="Channel is currently enabled." />
-      </field>
-      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
-        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
-        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
-      </field>
-      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
-    </register>
-    <register name="DMAC_CH_CTL27" address="0x40000000" bitWidth="32" desc="DMA channel 27 control register" hidden="true">
-      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
-        <value name="Disabled" value="0" desc="Channel is currently disabled." />
-        <value name="Enabled" value="1" desc="Channel is currently enabled." />
-      </field>
-      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
-        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
-        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
-      </field>
-      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
-    </register>
-    <register name="DMAC_CH_CTL28" address="0x40000000" bitWidth="32" desc="DMA channel 28 control register" hidden="true">
-      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
-        <value name="Disabled" value="0" desc="Channel is currently disabled." />
-        <value name="Enabled" value="1" desc="Channel is currently enabled." />
-      </field>
-      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
-        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
-        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
-      </field>
-      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
-    </register>
-    <register name="DMAC_CH_CTL29" address="0x40000000" bitWidth="32" desc="DMA channel 29 control register" hidden="true">
-      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
-        <value name="Disabled" value="0" desc="Channel is currently disabled." />
-        <value name="Enabled" value="1" desc="Channel is currently enabled." />
-      </field>
-      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
-        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
-        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
-      </field>
-      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
-    </register>
-    <register name="DMAC_CH_CTL30" address="0x40000000" bitWidth="32" desc="DMA channel 30 control register" hidden="true">
-      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
-        <value name="Disabled" value="0" desc="Channel is currently disabled." />
-        <value name="Enabled" value="1" desc="Channel is currently enabled." />
-      </field>
-      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
-        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
-        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
-      </field>
-      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
-    </register>
-    <register name="DMAC_CH_CTL31" address="0x40000000" bitWidth="31" desc="DMA channel 31 control register" hidden="true">
+    <register name="DMAC_CH_CTL18" address="0x40000000" bitWidth="32" desc="DMA channel 18 control register" hidden="true">
       <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
         <value name="Disabled" value="0" desc="Channel is currently disabled." />
         <value name="Enabled" value="1" desc="Channel is currently enabled." />
@@ -272,6 +80,182 @@
       <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
     </register>
     <register name="DMAC_CH_CTL14" address="0x40000000" bitWidth="32" desc="DMA channel 14 control register" hidden="true">
+      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
+        <value name="Disabled" value="0" desc="Channel is currently disabled." />
+        <value name="Enabled" value="1" desc="Channel is currently enabled." />
+      </field>
+      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
+        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
+        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
+      </field>
+      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
+    </register>
+    <register name="DMAC_CH_CTL15" address="0x40000000" bitWidth="32" desc="DMA channel 15 control register" hidden="true">
+      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
+        <value name="Disabled" value="0" desc="Channel is currently disabled." />
+        <value name="Enabled" value="1" desc="Channel is currently enabled." />
+      </field>
+      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
+        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
+        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
+      </field>
+      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
+    </register>
+    <register name="DMAC_CH_CTL10" address="0x40000000" bitWidth="32" desc="DMA channel 10 control register" hidden="true">
+      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
+        <value name="Disabled" value="0" desc="Channel is currently disabled." />
+        <value name="Enabled" value="1" desc="Channel is currently enabled." />
+      </field>
+      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
+        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
+        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
+      </field>
+      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
+    </register>
+    <register name="DMAC_CH_CTL11" address="0x40000000" bitWidth="32" desc="DMA channel 11 control register" hidden="true">
+      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
+        <value name="Disabled" value="0" desc="Channel is currently disabled." />
+        <value name="Enabled" value="1" desc="Channel is currently enabled." />
+      </field>
+      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
+        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
+        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
+      </field>
+      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
+    </register>
+    <register name="DMAC_CH_CTL12" address="0x40000000" bitWidth="32" desc="DMA channel 12 control register" hidden="true">
+      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
+        <value name="Disabled" value="0" desc="Channel is currently disabled." />
+        <value name="Enabled" value="1" desc="Channel is currently enabled." />
+      </field>
+      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
+        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
+        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
+      </field>
+      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
+    </register>
+    <register name="DMAC_CH_CTL29" address="0x40000000" bitWidth="32" desc="DMA channel 29 control register" hidden="true">
+      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
+        <value name="Disabled" value="0" desc="Channel is currently disabled." />
+        <value name="Enabled" value="1" desc="Channel is currently enabled." />
+      </field>
+      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
+        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
+        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
+      </field>
+      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
+    </register>
+    <register name="DMAC_CH_CTL28" address="0x40000000" bitWidth="32" desc="DMA channel 28 control register" hidden="true">
+      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
+        <value name="Disabled" value="0" desc="Channel is currently disabled." />
+        <value name="Enabled" value="1" desc="Channel is currently enabled." />
+      </field>
+      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
+        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
+        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
+      </field>
+      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
+    </register>
+    <register name="DMAC_CH_CTL27" address="0x40000000" bitWidth="32" desc="DMA channel 27 control register" hidden="true">
+      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
+        <value name="Disabled" value="0" desc="Channel is currently disabled." />
+        <value name="Enabled" value="1" desc="Channel is currently enabled." />
+      </field>
+      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
+        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
+        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
+      </field>
+      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
+    </register>
+    <register name="DMAC_CH_CTL16" address="0x40000000" bitWidth="32" desc="DMA channel 16 control register" hidden="true">
+      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
+        <value name="Disabled" value="0" desc="Channel is currently disabled." />
+        <value name="Enabled" value="1" desc="Channel is currently enabled." />
+      </field>
+      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
+        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
+        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
+      </field>
+      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
+    </register>
+    <register name="DMAC_CH_CTL31" address="0x40000000" bitWidth="31" desc="DMA channel 31 control register" hidden="true">
+      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
+        <value name="Disabled" value="0" desc="Channel is currently disabled." />
+        <value name="Enabled" value="1" desc="Channel is currently enabled." />
+      </field>
+      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
+        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
+        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
+      </field>
+      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
+    </register>
+    <register name="DMAC_CH_CTL30" address="0x40000000" bitWidth="32" desc="DMA channel 30 control register" hidden="true">
+      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
+        <value name="Disabled" value="0" desc="Channel is currently disabled." />
+        <value name="Enabled" value="1" desc="Channel is currently enabled." />
+      </field>
+      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
+        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
+        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
+      </field>
+      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
+    </register>
+    <register name="DMAC_CH_CTL26" address="0x40000000" bitWidth="32" desc="DMA channel 26 control register" hidden="true">
+      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
+        <value name="Disabled" value="0" desc="Channel is currently disabled." />
+        <value name="Enabled" value="1" desc="Channel is currently enabled." />
+      </field>
+      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
+        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
+        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
+      </field>
+      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
+    </register>
+    <register name="DMAC_CH_CTL23" address="0x40000000" bitWidth="32" desc="DMA channel 23 control register" hidden="true">
+      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
+        <value name="Disabled" value="0" desc="Channel is currently disabled." />
+        <value name="Enabled" value="1" desc="Channel is currently enabled." />
+      </field>
+      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
+        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
+        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
+      </field>
+      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
+    </register>
+    <register name="DMAC_CH_CTL22" address="0x40000000" bitWidth="32" desc="DMA channel 22 control register" hidden="true">
+      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
+        <value name="Disabled" value="0" desc="Channel is currently disabled." />
+        <value name="Enabled" value="1" desc="Channel is currently enabled." />
+      </field>
+      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
+        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
+        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
+      </field>
+      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
+    </register>
+    <register name="DMAC_CH_CTL21" address="0x40000000" bitWidth="32" desc="DMA channel 21 control register" hidden="true">
+      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
+        <value name="Disabled" value="0" desc="Channel is currently disabled." />
+        <value name="Enabled" value="1" desc="Channel is currently enabled." />
+      </field>
+      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
+        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
+        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
+      </field>
+      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
+    </register>
+    <register name="DMAC_CH_CTL25" address="0x40000000" bitWidth="32" desc="DMA channel 25 control register" hidden="true">
+      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
+        <value name="Disabled" value="0" desc="Channel is currently disabled." />
+        <value name="Enabled" value="1" desc="Channel is currently enabled." />
+      </field>
+      <field name="PING_PONG" from="30" to="30" access="RW" resetVal="" desc="Identifies the descriptor structure that is currently in use by the DMA controller.">
+        <value name="DESCR0" value="0" desc="Descriptor 0 (PING) is currently in use." />
+        <value name="DESCR1" value="1" desc="Descriptor 1 (PONG) is currently in use." />
+      </field>
+      <field name="PRIO" from="29" to="28" access="RW" resetVal="" desc="Channel priority. Priority can be 0,1,2 or 3. 0 is the highest." />
+    </register>
+    <register name="DMAC_CH_CTL24" address="0x40000000" bitWidth="32" desc="DMA channel 24 control register" hidden="true">
       <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Channel enable control.">
         <value name="Disabled" value="0" desc="Channel is currently disabled." />
         <value name="Enabled" value="1" desc="Channel is currently enabled." />
@@ -1397,4 +1381,20 @@
     </register>
   </block>
   <block name="cy_lfclk" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PWM" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
+    <block name="VMux_count" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="VMux_reload" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="VMux_start" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="VMux_stop" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="VMux_capture" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="VMux_clock" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="cy_m0s8_tcpwm_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <register name="COUNTER" address="0x40200248" bitWidth="32" desc="Current counter value" hidden="false" />
+    <register name="CC" address="0x4020024C" bitWidth="32" desc="Compare / capture value" hidden="false" />
+    <register name="CC_BUF" address="0x40200250" bitWidth="32" desc="Compare / capture buffer value" hidden="false" />
+    <register name="PERIOD" address="0x40200254" bitWidth="32" desc="Period value" hidden="false" />
+    <register name="PERIOD_BUF" address="0x40200258" bitWidth="32" desc="Period buffer value" hidden="false" />
+  </block>
+  <block name="Buzzer" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Clock_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
 </blockRegMap>

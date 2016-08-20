@@ -1,10 +1,14 @@
 
 #include <project.h>
 
+void switchCallBack()
+{
+}
+
 int main(void)
 {
-    CyGlobalIntEnable; /* Enable global interrupts. */
- 
+    CyGlobalIntEnable; 
+    
     for(;;)
     {
     }

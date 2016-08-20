@@ -1,5 +1,5 @@
 #include <project.h>
-#include "SwitchMatrix.h"
+#include "`$INSTANCE_NAME`_SwitchMatrix.h"
 
 // how often to read each switch in Hz
 #define SwitchMatrix_READ_INTERVAL (50)
@@ -24,9 +24,12 @@ void SwitchMatrix_SwitchCallBack()
         return;
     count = 0;
     
-    SwitchMatrix_vals[SwitchMatrix_currentCol] = ~Row_Read();
+    SwitchMatrix_vals[SwitchMatrix_currentCol] = ~`$INSTANCE_NAME`_Row_Read();
     SwitchMatrix_currentCol = (SwitchMatrix_currentCol+1) % SwitchMatrix_NUMCOLS;
-    Col_Write(SwitchMatrix_currentCol); // setup for the next column
+    #ifdef `$INSTANCE_NAME`_SWITCHED_CALLBACK
+    (*`$INSTANCE_NAME`_SWITCHED_CALLBACK());
+    #endif
+    `$INSTANCE_NAME`_Col_Write(SwitchMatrix_currentCol); // setup for the next column
 }
 
 /*****************************************************************************\
