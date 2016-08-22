@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blockRegMap version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cypress.com/xsd/cyblockregmap cyblockregmap.xsd" xmlns="http://cypress.com/xsd/cyblockregmap">
+  <block name="SW_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SwitchMatrix" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
+    <block name="Row" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="Col" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  </block>
+  <block name="D_9" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="D_8" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="D_7" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="D_6" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="D_5" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="D_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="D_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="D_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SW_9" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SW_8" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SW_7" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SW_6" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SW_5" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SW_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SW_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="SW_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="D_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="cy_lfclk" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+</blockRegMap>
