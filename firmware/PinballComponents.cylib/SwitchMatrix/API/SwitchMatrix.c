@@ -10,11 +10,17 @@ static int SwitchMatrix_currentCol=0;
 
 static uint8 SwitchMatrix_temps[SwitchMatrix_NUMCOLS];
 static SwitchMatrix_MASK_TYPE SwitchMatrix_currentStatus;
-static SwitchMatrix_MASK_TYPE SwitchMatrix_interruptStatus;
 
+// bitwise flags to indicate interest in interrupt
 static SwitchMatrix_MASK_TYPE SwitchMatrix_fallingInterrupt;
 static SwitchMatrix_MASK_TYPE SwitchMatrix_risingInterrupt;
 static SwitchMatrix_MASK_TYPE SwitchMatrix_bothInterrupt;
+
+// bitwise flags to indicate which one changed
+static SwitchMatrix_MASK_TYPE SwitchMatrix_fallingInterruptStatus;
+static SwitchMatrix_MASK_TYPE SwitchMatrix_risingInterruptStatus;
+static SwitchMatrix_MASK_TYPE SwitchMatrix_bothInterruptStatus;
+
 
 void SwitchMatrix_SetInterruptMode(int row,int col,SwitchMatrix_Inter_Mode mode)
 {
@@ -42,28 +48,41 @@ void SwitchMatrix_SwitchCallBack()
     
     SwitchMatrix_temps[SwitchMatrix_currentCol] = ~SwitchMatrix_Row_Read() & rowMask;
     
-    //SwitchMatrix_temps[SwitchMatrix_currentCol] = (~SwitchMatrix_Row_Read())&rowMask; 
+    // calculate the bit mask
+    int i;
+    SwitchMatrix_MASK_TYPE  nextStatus=0;
+    
+    for(i=0;i<SwitchMatrix_NUMCOLS;i++)
+    {
+        nextStatus |= SwitchMatrix_temps[i] << (i * SwitchMatrix_NUMROWS);
+    }
+    
+    
+    SwitchMatrix_fallingInterruptStatus |= ~SwitchMatrix_currentStatus & nextStatus & SwitchMatrix_fallingInterrupt;
+    SwitchMatrix_risingInterruptStatus |= SwitchMatrix_currentStatus & ~nextStatus & SwitchMatrix_risingInterrupt;
+    SwitchMatrix_bothInterruptStatus |= (SwitchMatrix_fallingInterruptStatus | SwitchMatrix_risingInterruptStatus) & SwitchMatrix_bothInterrupt;
+    
+    SwitchMatrix_currentStatus = nextStatus;
+    
+    
     SwitchMatrix_Col_Write(~(1<<SwitchMatrix_currentCol)); // setup for the next column
     
     SwitchMatrix_currentCol = (SwitchMatrix_currentCol + 1) % SwitchMatrix_NUMCOLS;
     
     #ifdef SwitchMatrix_SWITCHED_CALLBACK
-    (*SwitchMatrix_SWITCHED_CALLBACK());
+    if(SwitchMatrix_risingInterruptStatus | SwitchMatrix_fallingInterruptStatus | bothInterruptStatus)
+    {
+        (*SwitchMatrix_SWITCHED_CALLBACK());
+    
+    }
+   
     #endif
     
 }
 
 SwitchMatrix_MASK_TYPE SwitchMatrix_ReadAll()
-{
-    int i;
-    uint32_t rval=0;
-    
-    for(i=0;i<SwitchMatrix_NUMCOLS;i++)
-    {
-        rval |= SwitchMatrix_temps[i] << (i * SwitchMatrix_NUMROWS);
-    }
-   
-    return rval;
+{ 
+    return SwitchMatrix_currentStatus;
 }
 
 /*****************************************************************************\
