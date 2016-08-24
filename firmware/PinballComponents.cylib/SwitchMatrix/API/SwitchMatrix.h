@@ -1,23 +1,24 @@
-#ifndef SwitchMatrix_SWITCHMATRIX_H
+#ifndef `$INSTANCE_NAME`_SWITCHMATRIX_H
 #include <stdint.h>
-#define SwitchMatrix_SWITCHMATRIX_H    
-#define SwitchMatrix_NUMCOLS (3)
-#define SwitchMatrix_NUMROWS (3)
+#define `$INSTANCE_NAME`_SWITCHMATRIX_H    
 
-#define SwitchMatrix_MASK_TYPE uint32_t
+
+#define `$INSTANCE_NAME`_MASK_TYPE uint32_t
     
-typedef enum SwitchMatrix_Inter_Mode {
+typedef enum `$INSTANCE_NAME`_Inter_Mode {
     NONE,
     RISING,
     FALLING,
     BOTH
-} SwitchMatrix_Inter_Mode;
+} `$INSTANCE_NAME`_Inter_Mode;
     
-void SwitchMatrix_Start(int intNumber);
-int SwitchMatrix_Read(int row,int col);
-SwitchMatrix_MASK_TYPE SwitchMatrix_ReadAll();
-void SwitchMatrix_SetInterruptMode(int row,int col,SwitchMatrix_Inter_Mode mode);
-
+void `$INSTANCE_NAME`_Start(int intNumber);
+int `$INSTANCE_NAME`_Read(int row,int col);
+`$INSTANCE_NAME`_MASK_TYPE `$INSTANCE_NAME`_ReadAll();
+void `$INSTANCE_NAME`_SetInterruptMode(int row,int col,`$INSTANCE_NAME`_Inter_Mode mode);
+`$INSTANCE_NAME`_MASK_TYPE `$INSTANCE_NAME`_ClearInterrupt();
+`$INSTANCE_NAME`_MASK_TYPE `$INSTANCE_NAME`_ReadFallingInterruptStatus();
+`$INSTANCE_NAME`_MASK_TYPE `$INSTANCE_NAME`_ReadRisingInterruptStatus();
 
 
 #endif

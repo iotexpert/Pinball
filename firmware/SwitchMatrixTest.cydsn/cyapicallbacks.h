@@ -11,8 +11,9 @@
 */
 #ifndef CYAPICALLBACKS_H
 #define CYAPICALLBACKS_H
-    
-#define SwitchMatrix_SWITCHED_CALLBACK switchCallBack 
+
+void switchedCallBack();
+#define SwitchMatrix_SWITCHED_CALLBACK switchedCallBack
     
 #endif /* CYAPICALLBACKS_H */   
 /* [] */
