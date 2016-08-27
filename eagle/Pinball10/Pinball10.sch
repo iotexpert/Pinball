@@ -11777,8 +11777,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R10" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R11" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="TAC_SWITCH" device="SMD" value="TAC_SWITCHSMD"/>
-<part name="M0+" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
-<part name="M1+" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
+<part name="M0+" library="SparkFun-Connectors" deviceset="M02" device="PTH" value="m"/>
+<part name="M1+" library="SparkFun-Connectors" deviceset="M02" device="PTH" value="m"/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M05" device="LOCK"/>
 <part name="R12" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R13" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
