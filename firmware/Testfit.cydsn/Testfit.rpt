@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.234ms
+Loading plugins phase: Elapsed time ==> 0s.187ms
 Initializing data phase: Elapsed time ==> 0s.000ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p \\vmware-host\Shared Folders\Documents\Pinball\firmware\Testfit.cydsn\Testfit.cyprj -d CYBLE-014008-00 -s \\vmware-host\Shared Folders\Documents\Pinball\firmware\Testfit.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 5s.687ms
+Elaboration phase: Elapsed time ==> 2s.324ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.078ms
+HDL generation phase: Elapsed time ==> 0s.093ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -41,7 +41,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Tue Aug 16 08:18:20 2016
+Thu Aug 25 12:39:44 2016
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 Testfit.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Tue Aug 16 08:18:20 2016
+Thu Aug 25 12:39:44 2016
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'
@@ -89,7 +89,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Tue Aug 16 08:18:20 2016
+Thu Aug 25 12:39:44 2016
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -122,7 +122,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Tue Aug 16 08:18:21 2016
+Thu Aug 25 12:39:44 2016
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -190,10 +190,10 @@ Alias Detection
 Aliasing \PWM_L:Net_66\ to \PWM_L:Net_75\
 Aliasing \PWM_L:Net_82\ to \PWM_L:Net_75\
 Aliasing \PWM_L:Net_72\ to \PWM_L:Net_75\
-Aliasing tmpOE__buzzer1_net_0 to \PWM_L:Net_69\
+Aliasing tmpOE__buzzer0_net_0 to \PWM_L:Net_69\
 Aliasing zero to \PWM_L:Net_75\
 Aliasing one to \PWM_L:Net_69\
-Aliasing tmpOE__buzzer2_net_0 to \PWM_L:Net_69\
+Aliasing tmpOE__buzzer1_net_0 to \PWM_L:Net_69\
 Aliasing \PWM_1:Net_75\ to \PWM_L:Net_75\
 Aliasing \PWM_1:Net_69\ to \PWM_L:Net_69\
 Aliasing \PWM_1:Net_66\ to \PWM_L:Net_75\
@@ -249,33 +249,34 @@ Aliasing \CapSense_1:IDAC2:Net_3\ to \PWM_L:Net_69\
 Aliasing \CapSense_1:tmpOE__Sns_net_1\ to \PWM_L:Net_69\
 Aliasing \CapSense_1:tmpOE__Sns_net_0\ to \PWM_L:Net_69\
 Aliasing \CapSense_1:IDAC1:Net_3\ to \PWM_L:Net_69\
+Aliasing tmpOE__accel_net_0 to \PWM_L:Net_69\
 Removing Lhs of wire \PWM_L:Net_81\[3] = Net_420[1]
 Removing Lhs of wire \PWM_L:Net_66\[6] = \PWM_L:Net_75\[4]
 Removing Lhs of wire \PWM_L:Net_82\[7] = \PWM_L:Net_75\[4]
 Removing Lhs of wire \PWM_L:Net_72\[8] = \PWM_L:Net_75\[4]
-Removing Rhs of wire tmpOE__buzzer1_net_0[16] = \PWM_L:Net_69\[5]
+Removing Rhs of wire tmpOE__buzzer0_net_0[16] = \PWM_L:Net_69\[5]
 Removing Rhs of wire zero[21] = \PWM_L:Net_75\[4]
-Removing Lhs of wire one[22] = tmpOE__buzzer1_net_0[16]
-Removing Lhs of wire tmpOE__buzzer2_net_0[25] = tmpOE__buzzer1_net_0[16]
+Removing Lhs of wire one[22] = tmpOE__buzzer0_net_0[16]
+Removing Lhs of wire tmpOE__buzzer1_net_0[25] = tmpOE__buzzer0_net_0[16]
 Removing Lhs of wire \PWM_1:Net_81\[32] = Net_623[43]
 Removing Lhs of wire \PWM_1:Net_75\[33] = zero[21]
-Removing Lhs of wire \PWM_1:Net_69\[34] = tmpOE__buzzer1_net_0[16]
+Removing Lhs of wire \PWM_1:Net_69\[34] = tmpOE__buzzer0_net_0[16]
 Removing Lhs of wire \PWM_1:Net_66\[35] = zero[21]
 Removing Lhs of wire \PWM_1:Net_82\[36] = zero[21]
 Removing Lhs of wire \PWM_1:Net_72\[37] = zero[21]
 Removing Lhs of wire \PWM_2:Net_81\[45] = Net_623[43]
 Removing Lhs of wire \PWM_2:Net_75\[46] = zero[21]
-Removing Lhs of wire \PWM_2:Net_69\[47] = tmpOE__buzzer1_net_0[16]
+Removing Lhs of wire \PWM_2:Net_69\[47] = tmpOE__buzzer0_net_0[16]
 Removing Lhs of wire \PWM_2:Net_66\[48] = zero[21]
 Removing Lhs of wire \PWM_2:Net_82\[49] = zero[21]
 Removing Lhs of wire \PWM_2:Net_72\[50] = zero[21]
-Removing Lhs of wire tmpOE__M2L_net_0[57] = tmpOE__buzzer1_net_0[16]
+Removing Lhs of wire tmpOE__M2L_net_0[57] = tmpOE__buzzer0_net_0[16]
 Removing Rhs of wire Net_494[58] = \mux_4:tmp__mux_4_reg\[243]
-Removing Lhs of wire tmpOE__M2R_net_0[64] = tmpOE__buzzer1_net_0[16]
+Removing Lhs of wire tmpOE__M2R_net_0[64] = tmpOE__buzzer0_net_0[16]
 Removing Rhs of wire Net_493[65] = \mux_3:tmp__mux_3_reg\[241]
-Removing Lhs of wire tmpOE__M1L_net_0[71] = tmpOE__buzzer1_net_0[16]
+Removing Lhs of wire tmpOE__M1L_net_0[71] = tmpOE__buzzer0_net_0[16]
 Removing Rhs of wire Net_446[72] = \mux_2:tmp__mux_2_reg\[195]
-Removing Lhs of wire tmpOE__M1R_net_0[78] = tmpOE__buzzer1_net_0[16]
+Removing Lhs of wire tmpOE__M1R_net_0[78] = tmpOE__buzzer0_net_0[16]
 Removing Rhs of wire Net_470[79] = \mux_1:tmp__mux_1_reg\[224]
 Removing Lhs of wire \I2C:select_s_wire\[94] = zero[21]
 Removing Lhs of wire \I2C:rx_wire\[95] = zero[21]
@@ -283,23 +284,23 @@ Removing Lhs of wire \I2C:Net_1170\[98] = \I2C:Net_847\[93]
 Removing Lhs of wire \I2C:sclk_s_wire\[99] = zero[21]
 Removing Lhs of wire \I2C:mosi_s_wire\[100] = zero[21]
 Removing Lhs of wire \I2C:miso_m_wire\[101] = zero[21]
-Removing Lhs of wire \I2C:tmpOE__sda_net_0\[103] = tmpOE__buzzer1_net_0[16]
-Removing Lhs of wire \I2C:tmpOE__scl_net_0\[109] = tmpOE__buzzer1_net_0[16]
+Removing Lhs of wire \I2C:tmpOE__sda_net_0\[103] = tmpOE__buzzer0_net_0[16]
+Removing Lhs of wire \I2C:tmpOE__scl_net_0\[109] = tmpOE__buzzer0_net_0[16]
 Removing Lhs of wire \I2C:cts_wire\[118] = zero[21]
-Removing Lhs of wire tmpOE__LEDCOL_net_3[142] = tmpOE__buzzer1_net_0[16]
-Removing Lhs of wire tmpOE__LEDCOL_net_2[143] = tmpOE__buzzer1_net_0[16]
-Removing Lhs of wire tmpOE__LEDCOL_net_1[144] = tmpOE__buzzer1_net_0[16]
-Removing Lhs of wire tmpOE__LEDCOL_net_0[145] = tmpOE__buzzer1_net_0[16]
-Removing Lhs of wire tmpOE__LEDROW_net_3[157] = tmpOE__buzzer1_net_0[16]
-Removing Lhs of wire tmpOE__LEDROW_net_2[158] = tmpOE__buzzer1_net_0[16]
-Removing Lhs of wire tmpOE__LEDROW_net_1[159] = tmpOE__buzzer1_net_0[16]
-Removing Lhs of wire tmpOE__LEDROW_net_0[160] = tmpOE__buzzer1_net_0[16]
-Removing Lhs of wire tmpOE__SWCOL_net_2[172] = tmpOE__buzzer1_net_0[16]
-Removing Lhs of wire tmpOE__SWCOL_net_1[173] = tmpOE__buzzer1_net_0[16]
-Removing Lhs of wire tmpOE__SWCOL_net_0[174] = tmpOE__buzzer1_net_0[16]
-Removing Lhs of wire tmpOE__SWRow_net_2[184] = tmpOE__buzzer1_net_0[16]
-Removing Lhs of wire tmpOE__SWRow_net_1[185] = tmpOE__buzzer1_net_0[16]
-Removing Lhs of wire tmpOE__SWRow_net_0[186] = tmpOE__buzzer1_net_0[16]
+Removing Lhs of wire tmpOE__LEDCOL_net_3[142] = tmpOE__buzzer0_net_0[16]
+Removing Lhs of wire tmpOE__LEDCOL_net_2[143] = tmpOE__buzzer0_net_0[16]
+Removing Lhs of wire tmpOE__LEDCOL_net_1[144] = tmpOE__buzzer0_net_0[16]
+Removing Lhs of wire tmpOE__LEDCOL_net_0[145] = tmpOE__buzzer0_net_0[16]
+Removing Lhs of wire tmpOE__LEDROW_net_3[157] = tmpOE__buzzer0_net_0[16]
+Removing Lhs of wire tmpOE__LEDROW_net_2[158] = tmpOE__buzzer0_net_0[16]
+Removing Lhs of wire tmpOE__LEDROW_net_1[159] = tmpOE__buzzer0_net_0[16]
+Removing Lhs of wire tmpOE__LEDROW_net_0[160] = tmpOE__buzzer0_net_0[16]
+Removing Lhs of wire tmpOE__SWCOL_net_2[172] = tmpOE__buzzer0_net_0[16]
+Removing Lhs of wire tmpOE__SWCOL_net_1[173] = tmpOE__buzzer0_net_0[16]
+Removing Lhs of wire tmpOE__SWCOL_net_0[174] = tmpOE__buzzer0_net_0[16]
+Removing Lhs of wire tmpOE__SWRow_net_2[184] = tmpOE__buzzer0_net_0[16]
+Removing Lhs of wire tmpOE__SWRow_net_1[185] = tmpOE__buzzer0_net_0[16]
+Removing Lhs of wire tmpOE__SWRow_net_0[186] = tmpOE__buzzer0_net_0[16]
 Removing Rhs of wire Net_487[196] = \Control_Reg_1:control_out_0\[200]
 Removing Rhs of wire Net_487[196] = \Control_Reg_1:control_0\[223]
 Removing Lhs of wire Net_488[197] = zero[21]
@@ -310,7 +311,7 @@ Removing Rhs of wire Net_511[201] = \Control_Reg_1:control_1\[222]
 Removing Lhs of wire Net_486[225] = zero[21]
 Removing Lhs of wire \PWM_R:Net_81\[227] = Net_506[239]
 Removing Lhs of wire \PWM_R:Net_75\[228] = zero[21]
-Removing Lhs of wire \PWM_R:Net_69\[229] = tmpOE__buzzer1_net_0[16]
+Removing Lhs of wire \PWM_R:Net_69\[229] = tmpOE__buzzer0_net_0[16]
 Removing Lhs of wire \PWM_R:Net_66\[230] = zero[21]
 Removing Lhs of wire \PWM_R:Net_82\[231] = zero[21]
 Removing Lhs of wire \PWM_R:Net_72\[232] = zero[21]
@@ -318,14 +319,15 @@ Removing Lhs of wire Net_518[242] = zero[21]
 Removing Lhs of wire Net_519[244] = zero[21]
 Removing Lhs of wire \CapSense_1:Net_104\[255] = zero[21]
 Removing Lhs of wire \CapSense_1:Net_312\[259] = zero[21]
-Removing Lhs of wire \CapSense_1:tmpOE__Cmod_net_0\[262] = tmpOE__buzzer1_net_0[16]
-Removing Lhs of wire \CapSense_1:IDAC2:Net_3\[269] = tmpOE__buzzer1_net_0[16]
-Removing Lhs of wire \CapSense_1:tmpOE__Sns_net_1\[271] = tmpOE__buzzer1_net_0[16]
-Removing Lhs of wire \CapSense_1:tmpOE__Sns_net_0\[272] = tmpOE__buzzer1_net_0[16]
-Removing Lhs of wire \CapSense_1:IDAC1:Net_3\[280] = tmpOE__buzzer1_net_0[16]
+Removing Lhs of wire \CapSense_1:tmpOE__Cmod_net_0\[262] = tmpOE__buzzer0_net_0[16]
+Removing Lhs of wire \CapSense_1:IDAC2:Net_3\[269] = tmpOE__buzzer0_net_0[16]
+Removing Lhs of wire \CapSense_1:tmpOE__Sns_net_1\[271] = tmpOE__buzzer0_net_0[16]
+Removing Lhs of wire \CapSense_1:tmpOE__Sns_net_0\[272] = tmpOE__buzzer0_net_0[16]
+Removing Lhs of wire \CapSense_1:IDAC1:Net_3\[280] = tmpOE__buzzer0_net_0[16]
+Removing Lhs of wire tmpOE__accel_net_0[285] = tmpOE__buzzer0_net_0[16]
 
 ------------------------------------------------------
-Aliased 0 equations, 74 wires.
+Aliased 0 equations, 75 wires.
 ------------------------------------------------------
 
 ----------------------------------------------------------
@@ -369,10 +371,10 @@ CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\wa
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\bin/warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=\\vmware-host\Shared Folders\Documents\Pinball\firmware\Testfit.cydsn\Testfit.cyprj" -dcpsoc3 Testfit.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 0s.906ms
+Warp synthesis phase: Elapsed time ==> 0s.452ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V3.3.0.9604, Family: PSoC3, Started at: Tuesday, 16 August 2016 08:18:21
+cyp3fit: V3.3.0.9604, Family: PSoC3, Started at: Thursday, 25 August 2016 12:39:45
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\vmware-host\Shared Folders\Documents\Pinball\firmware\Testfit.cydsn\Testfit.cyprj -d CYBLE-014008-00 Testfit.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
@@ -392,8 +394,6 @@ Assigning clock BLE_LFCLK to clock LFCLK because it is a pass-through
 <CYPRESSTAG name="UDB Clock/Enable Remapping Results">
 </CYPRESSTAG>
 </CYPRESSTAG>
-ADD: pft.M0040: information: The following 25 pin(s) will be assigned a location by the fitter: \CapSense_1:Cmod(0)\, \CapSense_1:Sns(0)\, \CapSense_1:Sns(1)\, \I2C:scl(0)\, \I2C:sda(0)\, buzzer1(0), buzzer2(0), LEDCOL(0), LEDCOL(1), LEDCOL(2), LEDCOL(3), LEDROW(0), LEDROW(1), LEDROW(2), LEDROW(3), M1L(0), M1R(0), M2L(0), M2R(0), SWCOL(0), SWCOL(1), SWCOL(2), SWRow(0), SWRow(1), SWRow(2)
-
 
 Removing unused cells resulting from optimization
 Done removing unused cells.
@@ -412,6 +412,46 @@ Design Equations
     ------------------------------------------------------------
     Pin listing
     ------------------------------------------------------------
+
+    Pin : Name = buzzer0(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: CMOS_OUT
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL
+            Initial Value: 1
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => buzzer0(0)__PA ,
+            input => Net_248 ,
+            pad => buzzer0(0)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = buzzer1(0)
         Attributes:
@@ -447,45 +487,11 @@ Design Equations
             IO Voltage: 0
         PORT MAP (
             pa_out => buzzer1(0)__PA ,
-            input => Net_248 ,
-            pad => buzzer1(0)_PAD );
-
-    Pin : Name = buzzer2(0)
-        Attributes:
-            In Group/Port: True
-            In Sync Option: AUTO
-            Out Sync Option: NOSYNC
-            Interrupt generated: False
-            Interrupt mode: NONE
-            Drive mode: CMOS_OUT
-            VTrip: EITHER
-            Slew: FAST
-            Input Sync needed: False
-            Output Sync needed: False
-            SC shield enabled: False
-            POR State: ANY
-            LCD Mode: COMMON
-            Register Mode: RegComb
-            CaSense Mode: NEITHER
-            Treat as pin: True
-            Is OE Registered: False
-            Uses Analog: False
-            Can contain Digital: True
-            Is SIO: False
-            SIO Output Buf: NONREGULATED
-            SIO Input Buf: SINGLE_ENDED
-            SIO HiFreq: LOW
-            SIO Hyst: DISABLED
-            SIO Vtrip: MULTIPLIER_0_5
-            SIO Multiplier Index: 0
-            SIO RefSel: VCC_IO
-            Required Capabilitites: DIGITAL
-            Initial Value: 1
-            IO Voltage: 0
-        PORT MAP (
-            pa_out => buzzer2(0)__PA ,
             input => Net_249 ,
-            pad => buzzer2(0)_PAD );
+            pad => buzzer1(0)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = M2L(0)
         Attributes:
@@ -523,6 +529,9 @@ Design Equations
             pa_out => M2L(0)__PA ,
             input => Net_494 ,
             pad => M2L(0)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = M2R(0)
         Attributes:
@@ -560,6 +569,9 @@ Design Equations
             pa_out => M2R(0)__PA ,
             input => Net_493 ,
             pad => M2R(0)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = M1L(0)
         Attributes:
@@ -597,6 +609,9 @@ Design Equations
             pa_out => M1L(0)__PA ,
             input => Net_446 ,
             pad => M1L(0)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = M1R(0)
         Attributes:
@@ -634,6 +649,9 @@ Design Equations
             pa_out => M1R(0)__PA ,
             input => Net_470 ,
             pad => M1R(0)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = \I2C:sda(0)\
         Attributes:
@@ -671,6 +689,9 @@ Design Equations
             pa_out => \I2C:sda(0)\__PA ,
             fb => \I2C:sda_wire\ ,
             pad => \I2C:sda(0)_PAD\ );
+        Properties:
+        {
+        }
 
     Pin : Name = \I2C:scl(0)\
         Attributes:
@@ -708,6 +729,9 @@ Design Equations
             pa_out => \I2C:scl(0)\__PA ,
             fb => \I2C:scl_wire\ ,
             pad => \I2C:scl(0)_PAD\ );
+        Properties:
+        {
+        }
 
     Pin : Name = LEDCOL(0)
         Attributes:
@@ -744,6 +768,9 @@ Design Equations
         PORT MAP (
             pa_out => LEDCOL(0)__PA ,
             pad => LEDCOL(0)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = LEDCOL(1)
         Attributes:
@@ -780,6 +807,9 @@ Design Equations
         PORT MAP (
             pa_out => LEDCOL(1)__PA ,
             pad => LEDCOL(1)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = LEDCOL(2)
         Attributes:
@@ -816,6 +846,9 @@ Design Equations
         PORT MAP (
             pa_out => LEDCOL(2)__PA ,
             pad => LEDCOL(2)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = LEDCOL(3)
         Attributes:
@@ -852,6 +885,9 @@ Design Equations
         PORT MAP (
             pa_out => LEDCOL(3)__PA ,
             pad => LEDCOL(3)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = LEDROW(0)
         Attributes:
@@ -888,6 +924,9 @@ Design Equations
         PORT MAP (
             pa_out => LEDROW(0)__PA ,
             pad => LEDROW(0)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = LEDROW(1)
         Attributes:
@@ -924,6 +963,9 @@ Design Equations
         PORT MAP (
             pa_out => LEDROW(1)__PA ,
             pad => LEDROW(1)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = LEDROW(2)
         Attributes:
@@ -960,6 +1002,9 @@ Design Equations
         PORT MAP (
             pa_out => LEDROW(2)__PA ,
             pad => LEDROW(2)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = LEDROW(3)
         Attributes:
@@ -996,6 +1041,9 @@ Design Equations
         PORT MAP (
             pa_out => LEDROW(3)__PA ,
             pad => LEDROW(3)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = SWCOL(0)
         Attributes:
@@ -1032,6 +1080,9 @@ Design Equations
         PORT MAP (
             pa_out => SWCOL(0)__PA ,
             pad => SWCOL(0)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = SWCOL(1)
         Attributes:
@@ -1068,6 +1119,9 @@ Design Equations
         PORT MAP (
             pa_out => SWCOL(1)__PA ,
             pad => SWCOL(1)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = SWCOL(2)
         Attributes:
@@ -1104,6 +1158,9 @@ Design Equations
         PORT MAP (
             pa_out => SWCOL(2)__PA ,
             pad => SWCOL(2)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = SWRow(0)
         Attributes:
@@ -1140,6 +1197,9 @@ Design Equations
         PORT MAP (
             pa_out => SWRow(0)__PA ,
             pad => SWRow(0)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = SWRow(1)
         Attributes:
@@ -1176,6 +1236,9 @@ Design Equations
         PORT MAP (
             pa_out => SWRow(1)__PA ,
             pad => SWRow(1)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = SWRow(2)
         Attributes:
@@ -1212,6 +1275,9 @@ Design Equations
         PORT MAP (
             pa_out => SWRow(2)__PA ,
             pad => SWRow(2)_PAD );
+        Properties:
+        {
+        }
 
     Pin : Name = \CapSense_1:Cmod(0)\
         Attributes:
@@ -1250,6 +1316,9 @@ Design Equations
             pa_out => \CapSense_1:Cmod(0)\__PA ,
             analog_term => \CapSense_1:Net_398\ ,
             pad => \CapSense_1:Cmod(0)_PAD\ );
+        Properties:
+        {
+        }
 
     Pin : Name = \CapSense_1:Sns(0)\
         Attributes:
@@ -1288,6 +1357,9 @@ Design Equations
             pa_out => \CapSense_1:Sns(0)\__PA ,
             analog_term => \CapSense_1:Net_245_0\ ,
             pad => \CapSense_1:Sns(0)_PAD\ );
+        Properties:
+        {
+        }
 
     Pin : Name = \CapSense_1:Sns(1)\
         Attributes:
@@ -1326,6 +1398,48 @@ Design Equations
             pa_out => \CapSense_1:Sns(1)\__PA ,
             analog_term => \CapSense_1:Net_245_0\ ,
             pad => \CapSense_1:Sns(1)_PAD\ );
+        Properties:
+        {
+        }
+
+    Pin : Name = accel(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => accel(0)__PA ,
+            pad => accel(0)_PAD );
+        Properties:
+        {
+        }
     </CYPRESSTAG>
     <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
 
@@ -1462,7 +1576,7 @@ Resource Type                 : Used : Free :  Max :  % Used
 ============================================================
 Digital Clocks                :    0 :    4 :    4 :  0.00 %
 Interrupts                    :    3 :   29 :   32 :  9.38 %
-IO                            :   27 :    0 :   27 : 100.00 %
+IO                            :   26 :    1 :   27 : 96.30 %
 Segment LCD                   :    0 :    1 :    1 :  0.00 %
 CapSense                      :    1 :    0 :    1 : 100.00 %
 Die Temp                      :    0 :    1 :    1 :  0.00 %
@@ -1489,15 +1603,15 @@ Tech mapping phase: Elapsed time ==> 0s.046ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="Analog Placement">
-Elapsed time ==> 0.1697840s
+Elapsed time ==> 0.0798980s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 0s.343ms
+Analog Placement phase: Elapsed time ==> 0s.296ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=2 Elapsed=0.0296734 secs
+Route success=True, Iterations=1 Elapsed=0.0016963 secs
 </CYPRESSTAG>
-Analog Routing phase: Elapsed time ==> 0s.062ms
+Analog Routing phase: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -1507,10 +1621,14 @@ Map of net to items {
     source0
     swh_13
     amuxbusa_sar
-    P4_P41
-    p4_1
-    P3_P42
-    p3_2
+    AMUX_CTB_SAR_SWITCH_A_SL
+    amuxbridge_ctb_sar_a
+    AMUX_CTB_SAR_SWITCH_A_SR
+    amuxbusa_ctb
+    P0_P46
+    p0_6
+    P0_P47
+    p0_7
     idac0_out
     swhv_1
   }
@@ -1525,10 +1643,14 @@ Map of item to net {
   source0                                          -> \CapSense_1:Net_245_0\
   swh_13                                           -> \CapSense_1:Net_245_0\
   amuxbusa_sar                                     -> \CapSense_1:Net_245_0\
-  P4_P41                                           -> \CapSense_1:Net_245_0\
-  p4_1                                             -> \CapSense_1:Net_245_0\
-  P3_P42                                           -> \CapSense_1:Net_245_0\
-  p3_2                                             -> \CapSense_1:Net_245_0\
+  AMUX_CTB_SAR_SWITCH_A_SL                         -> \CapSense_1:Net_245_0\
+  amuxbridge_ctb_sar_a                             -> \CapSense_1:Net_245_0\
+  AMUX_CTB_SAR_SWITCH_A_SR                         -> \CapSense_1:Net_245_0\
+  amuxbusa_ctb                                     -> \CapSense_1:Net_245_0\
+  P0_P46                                           -> \CapSense_1:Net_245_0\
+  p0_6                                             -> \CapSense_1:Net_245_0\
+  P0_P47                                           -> \CapSense_1:Net_245_0\
+  p0_7                                             -> \CapSense_1:Net_245_0\
   idac0_out                                        -> \CapSense_1:Net_245_0\
   swhv_1                                           -> \CapSense_1:Net_245_0\
   cmod                                             -> \CapSense_1:Net_398\
@@ -1538,12 +1660,12 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.046ms
+Analog Code Generation phase: Elapsed time ==> 0s.031ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
 I2659: No Constrained paths were found. The placer will run in non-timing driven mode.
-I2076: Total run-time: 18.7 sec.
+I2076: Total run-time: 0.2 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
@@ -1574,7 +1696,7 @@ PLD Packing: Elapsed time ==> 0s.000ms
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.062ms
+Partitioning: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Simulated Annealing">
 Annealing: Elapsed time ==> 0s.000ms
@@ -1723,7 +1845,7 @@ Intr container @ [IntrContainer=(0)]:
         }
 Port 0 contains the following IO cells:
 [IoId=1]: 
-Pin : Name = buzzer1(0)
+Pin : Name = buzzer0(0)
     Attributes:
         In Group/Port: True
         In Sync Option: AUTO
@@ -1756,9 +1878,9 @@ Pin : Name = buzzer1(0)
         Initial Value: 1
         IO Voltage: 0
     PORT MAP (
-        pa_out => buzzer1(0)__PA ,
+        pa_out => buzzer0(0)__PA ,
         input => Net_248 ,
-        pad => buzzer1(0)_PAD );
+        pad => buzzer0(0)_PAD );
     Properties:
     {
     }
@@ -1841,6 +1963,88 @@ Pin : Name = \I2C:scl(0)\
         pa_out => \I2C:scl(0)\__PA ,
         fb => \I2C:scl_wire\ ,
         pad => \I2C:scl(0)_PAD\ );
+    Properties:
+    {
+    }
+
+[IoId=6]: 
+Pin : Name = \CapSense_1:Sns(0)\
+    Attributes:
+        Alias: Button0__BTN
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_ANALOG
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: True
+        Can contain Digital: False
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: ANALOG
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => \CapSense_1:Sns(0)\__PA ,
+        pad => \CapSense_1:Sns(0)_PAD\ );
+    Properties:
+    {
+    }
+
+[IoId=7]: 
+Pin : Name = \CapSense_1:Sns(1)\
+    Attributes:
+        Alias: Button1__BTN
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_ANALOG
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: True
+        Can contain Digital: False
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: ANALOG
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => \CapSense_1:Sns(1)\__PA ,
+        pad => \CapSense_1:Sns(1)_PAD\ );
     Properties:
     {
     }
@@ -2413,16 +2617,15 @@ Pin : Name = M2L(0)
     }
 
 [IoId=2]: 
-Pin : Name = \CapSense_1:Sns(1)\
+Pin : Name = accel(0)
     Attributes:
-        Alias: Button1__BTN
         In Group/Port: True
-        In Sync Option: AUTO
+        In Sync Option: NOSYNC
         Out Sync Option: AUTO
         Interrupt generated: False
         Interrupt mode: NONE
-        Drive mode: HI_Z_ANALOG
-        VTrip: EITHER
+        Drive mode: HI_Z_DIGITAL
+        VTrip: CMOS
         Slew: FAST
         Input Sync needed: False
         Output Sync needed: False
@@ -2433,8 +2636,8 @@ Pin : Name = \CapSense_1:Sns(1)\
         CaSense Mode: NEITHER
         Treat as pin: True
         Is OE Registered: False
-        Uses Analog: True
-        Can contain Digital: False
+        Uses Analog: False
+        Can contain Digital: True
         Is SIO: False
         SIO Output Buf: NONREGULATED
         SIO Input Buf: SINGLE_ENDED
@@ -2443,18 +2646,18 @@ Pin : Name = \CapSense_1:Sns(1)\
         SIO Vtrip: MULTIPLIER_0_5
         SIO Multiplier Index: 0
         SIO RefSel: VCC_IO
-        Required Capabilitites: ANALOG
-        Initial Value: 1
+        Required Capabilitites: DIGITAL
+        Initial Value: 0
         IO Voltage: 0
     PORT MAP (
-        pa_out => \CapSense_1:Sns(1)\__PA ,
-        pad => \CapSense_1:Sns(1)_PAD\ );
+        pa_out => accel(0)__PA ,
+        pad => accel(0)_PAD );
     Properties:
     {
     }
 
 [IoId=3]: 
-Pin : Name = buzzer2(0)
+Pin : Name = buzzer1(0)
     Attributes:
         In Group/Port: True
         In Sync Option: AUTO
@@ -2487,9 +2690,9 @@ Pin : Name = buzzer2(0)
         Initial Value: 1
         IO Voltage: 0
     PORT MAP (
-        pa_out => buzzer2(0)__PA ,
+        pa_out => buzzer1(0)__PA ,
         input => Net_249 ,
-        pad => buzzer2(0)_PAD );
+        pad => buzzer1(0)_PAD );
     Properties:
     {
     }
@@ -2697,47 +2900,6 @@ Pin : Name = \CapSense_1:Cmod(0)\
     {
     }
 
-[IoId=1]: 
-Pin : Name = \CapSense_1:Sns(0)\
-    Attributes:
-        Alias: Button0__BTN
-        In Group/Port: True
-        In Sync Option: AUTO
-        Out Sync Option: AUTO
-        Interrupt generated: False
-        Interrupt mode: NONE
-        Drive mode: HI_Z_ANALOG
-        VTrip: EITHER
-        Slew: FAST
-        Input Sync needed: False
-        Output Sync needed: False
-        SC shield enabled: False
-        POR State: ANY
-        LCD Mode: COMMON
-        Register Mode: RegComb
-        CaSense Mode: NEITHER
-        Treat as pin: True
-        Is OE Registered: False
-        Uses Analog: True
-        Can contain Digital: False
-        Is SIO: False
-        SIO Output Buf: NONREGULATED
-        SIO Input Buf: SINGLE_ENDED
-        SIO HiFreq: LOW
-        SIO Hyst: DISABLED
-        SIO Vtrip: MULTIPLIER_0_5
-        SIO Multiplier Index: 0
-        SIO RefSel: VCC_IO
-        Required Capabilitites: ANALOG
-        Initial Value: 1
-        IO Voltage: 0
-    PORT MAP (
-        pa_out => \CapSense_1:Sns(0)\__PA ,
-        pad => \CapSense_1:Sns(0)_PAD\ );
-    Properties:
-    {
-    }
-
 Clock group 0: 
     M0S8 Clock Block @ F(Clock,0): 
     m0s8clockblockcell: Name =ClockBlock
@@ -2838,7 +3000,7 @@ Timer/Counter/PWM group 0:
         PORT MAP (
             clock => Net_623_ff9 ,
             capture => zero ,
-            count => tmpOE__buzzer1_net_0 ,
+            count => tmpOE__buzzer0_net_0 ,
             reload => zero ,
             stop => zero ,
             start => zero ,
@@ -2857,7 +3019,7 @@ Timer/Counter/PWM group 0:
         PORT MAP (
             clock => Net_623_ff10 ,
             capture => zero ,
-            count => tmpOE__buzzer1_net_0 ,
+            count => tmpOE__buzzer0_net_0 ,
             reload => zero ,
             stop => zero ,
             start => zero ,
@@ -2876,7 +3038,7 @@ Timer/Counter/PWM group 0:
         PORT MAP (
             clock => Net_420_ff8 ,
             capture => zero ,
-            count => tmpOE__buzzer1_net_0 ,
+            count => tmpOE__buzzer0_net_0 ,
             reload => zero ,
             stop => zero ,
             start => zero ,
@@ -2895,7 +3057,7 @@ Timer/Counter/PWM group 0:
         PORT MAP (
             clock => Net_506_ff7 ,
             capture => zero ,
-            count => tmpOE__buzzer1_net_0 ,
+            count => tmpOE__buzzer0_net_0 ,
             reload => zero ,
             stop => zero ,
             start => zero ,
@@ -2945,65 +3107,66 @@ Port Configuration report
      |     |       | Interrupt |                  |                      | 
 Port | Pin | Fixed |      Type |       Drive Mode |                 Name | Connections
 -----+-----+-------+-----------+------------------+----------------------+-----------------------------
-   0 |   1 |       |      NONE |         CMOS_OUT |           buzzer1(0) | In(Net_248)
-     |   4 |       |      NONE |    OPEN_DRAIN_LO |         \I2C:sda(0)\ | FB(\I2C:sda_wire\)
-     |   5 |       |      NONE |    OPEN_DRAIN_LO |         \I2C:scl(0)\ | FB(\I2C:scl_wire\)
+   0 |   1 |     * |      NONE |         CMOS_OUT |           buzzer0(0) | In(Net_248)
+     |   4 |     * |      NONE |    OPEN_DRAIN_LO |         \I2C:sda(0)\ | FB(\I2C:sda_wire\)
+     |   5 |     * |      NONE |    OPEN_DRAIN_LO |         \I2C:scl(0)\ | FB(\I2C:scl_wire\)
+     |   6 |     * |      NONE |      HI_Z_ANALOG |  \CapSense_1:Sns(0)\ | 
+     |   7 |     * |      NONE |      HI_Z_ANALOG |  \CapSense_1:Sns(1)\ | 
 -----+-----+-------+-----------+------------------+----------------------+-----------------------------
-   1 |   0 |       |      NONE |         CMOS_OUT |               M1L(0) | In(Net_446)
-     |   1 |       |      NONE |         CMOS_OUT |               M2R(0) | In(Net_493)
-     |   2 |       |      NONE |         CMOS_OUT |            LEDCOL(0) | 
-     |   3 |       |      NONE |         CMOS_OUT |            LEDCOL(1) | 
-     |   4 |       |      NONE |         CMOS_OUT |            LEDCOL(2) | 
-     |   5 |       |      NONE |         CMOS_OUT |            LEDCOL(3) | 
+   1 |   0 |     * |      NONE |         CMOS_OUT |               M1L(0) | In(Net_446)
+     |   1 |     * |      NONE |         CMOS_OUT |               M2R(0) | In(Net_493)
+     |   2 |     * |      NONE |         CMOS_OUT |            LEDCOL(0) | 
+     |   3 |     * |      NONE |         CMOS_OUT |            LEDCOL(1) | 
+     |   4 |     * |      NONE |         CMOS_OUT |            LEDCOL(2) | 
+     |   5 |     * |      NONE |         CMOS_OUT |            LEDCOL(3) | 
 -----+-----+-------+-----------+------------------+----------------------+-----------------------------
-   2 |   1 |       |      NONE |     HI_Z_DIGITAL |             SWRow(0) | 
-     |   2 |       |      NONE |     HI_Z_DIGITAL |             SWRow(1) | 
-     |   3 |       |      NONE |     HI_Z_DIGITAL |             SWRow(2) | 
-     |   4 |       |      NONE |         CMOS_OUT |             SWCOL(0) | 
-     |   5 |       |      NONE |         CMOS_OUT |             SWCOL(1) | 
-     |   6 |       |      NONE |         CMOS_OUT |             SWCOL(2) | 
+   2 |   1 |     * |      NONE |     HI_Z_DIGITAL |             SWRow(0) | 
+     |   2 |     * |      NONE |     HI_Z_DIGITAL |             SWRow(1) | 
+     |   3 |     * |      NONE |     HI_Z_DIGITAL |             SWRow(2) | 
+     |   4 |     * |      NONE |         CMOS_OUT |             SWCOL(0) | 
+     |   5 |     * |      NONE |         CMOS_OUT |             SWCOL(1) | 
+     |   6 |     * |      NONE |         CMOS_OUT |             SWCOL(2) | 
 -----+-----+-------+-----------+------------------+----------------------+-----------------------------
-   3 |   0 |       |      NONE |         CMOS_OUT |               M1R(0) | In(Net_470)
-     |   1 |       |      NONE |         CMOS_OUT |               M2L(0) | In(Net_494)
-     |   2 |       |      NONE |      HI_Z_ANALOG |  \CapSense_1:Sns(1)\ | 
-     |   3 |       |      NONE |         CMOS_OUT |           buzzer2(0) | In(Net_249)
-     |   4 |       |      NONE |         CMOS_OUT |            LEDROW(0) | 
-     |   5 |       |      NONE |         CMOS_OUT |            LEDROW(1) | 
-     |   6 |       |      NONE |         CMOS_OUT |            LEDROW(2) | 
-     |   7 |       |      NONE |         CMOS_OUT |            LEDROW(3) | 
+   3 |   0 |     * |      NONE |         CMOS_OUT |               M1R(0) | In(Net_470)
+     |   1 |     * |      NONE |         CMOS_OUT |               M2L(0) | In(Net_494)
+     |   2 |     * |      NONE |     HI_Z_DIGITAL |             accel(0) | 
+     |   3 |     * |      NONE |         CMOS_OUT |           buzzer1(0) | In(Net_249)
+     |   4 |     * |      NONE |         CMOS_OUT |            LEDROW(0) | 
+     |   5 |     * |      NONE |         CMOS_OUT |            LEDROW(1) | 
+     |   6 |     * |      NONE |         CMOS_OUT |            LEDROW(2) | 
+     |   7 |     * |      NONE |         CMOS_OUT |            LEDROW(3) | 
 -----+-----+-------+-----------+------------------+----------------------+-----------------------------
-   4 |   0 |       |      NONE |      HI_Z_ANALOG | \CapSense_1:Cmod(0)\ | Analog(\CapSense_1:Net_398\)
-     |   1 |       |      NONE |      HI_Z_ANALOG |  \CapSense_1:Sns(0)\ | 
+   4 |   0 |     * |      NONE |      HI_Z_ANALOG | \CapSense_1:Cmod(0)\ | Analog(\CapSense_1:Net_398\)
 -------------------------------------------------------------------------------------------------------
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.000ms
-Digital Placement phase: Elapsed time ==> 19s.171ms
+Digital component placer commit/Report: Elapsed time ==> 0s.015ms
+Digital Placement phase: Elapsed time ==> 0s.405ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 Routing successful.
-Digital Routing phase: Elapsed time ==> 0s.734ms
+Digital Routing phase: Elapsed time ==> 0s.561ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream and API generation">
 Bitstream and API generation phase: Elapsed time ==> 0s.296ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream verification">
-Bitstream verification phase: Elapsed time ==> 0s.031ms
+Bitstream verification phase: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in Testfit_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.312ms
+Static timing analysis phase: Elapsed time ==> 0s.233ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.156ms
+Design database save phase: Elapsed time ==> 0s.140ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 21s.234ms
+cydsfit: Elapsed time ==> 2s.090ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 21s.281ms
-API generation phase: Elapsed time ==> 7s.586ms
-Dependency generation phase: Elapsed time ==> 0s.067ms
-Cleanup phase: Elapsed time ==> 0s.060ms
+Fitter phase: Elapsed time ==> 2s.137ms
+API generation phase: Elapsed time ==> 3s.416ms
+Dependency generation phase: Elapsed time ==> 0s.046ms
+Cleanup phase: Elapsed time ==> 0s.015ms
