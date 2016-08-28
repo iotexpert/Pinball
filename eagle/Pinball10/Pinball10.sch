@@ -11741,10 +11741,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="U$1" library="arh" deviceset="9X2" device=""/>
 <part name="J1" library="con-usb" deviceset="UB-M5BR-DM14" device=""/>
 <part name="BANK0" library="SparkFun-Connectors" deviceset="M08X2" device="" value="M08X2"/>
-<part name="R1" library="SparkFun" deviceset="RESISTOR" device=""/>
-<part name="R2" library="SparkFun" deviceset="RESISTOR" device=""/>
-<part name="R3" library="SparkFun" deviceset="RESISTOR" device=""/>
-<part name="R4" library="SparkFun" deviceset="RESISTOR" device=""/>
+<part name="R1" library="SparkFun" deviceset="RESISTOR" device="" value="330"/>
+<part name="R2" library="SparkFun" deviceset="RESISTOR" device="" value="330"/>
+<part name="R3" library="SparkFun" deviceset="RESISTOR" device="" value="330"/>
+<part name="R4" library="SparkFun" deviceset="RESISTOR" device="" value="330"/>
 <part name="LEDBANK1" library="SparkFun-Connectors" deviceset="M08X2" device=""/>
 <part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD"/>
 <part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD"/>
@@ -11762,32 +11762,33 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="B1" library="PatternAgents-TouchWidgets" deviceset="BUTTON_PASSIVE" device="12MM"/>
 <part name="U2" library="SparkFun-Sensors" deviceset="MMA8452Q" device=""/>
 <part name="U3" library="SparkFun-DigitalIC" deviceset="PCA9306" device="" value="PCA9306"/>
-<part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1.8K"/>
+<part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1.2K"/>
 <part name="U4" library="SparkFun-PowerIC" deviceset="V_REG_317" device="SMD"/>
-<part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
-<part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
+<part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="2N7002PW"/>
 <part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="4.7uF"/>
-<part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R10" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="560"/>
+<part name="R10" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="560"/>
 <part name="R11" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="TAC_SWITCH" device="SMD" value="TAC_SWITCHSMD"/>
 <part name="M0+" library="SparkFun-Connectors" deviceset="M02" device="PTH" value="m"/>
 <part name="M1+" library="SparkFun-Connectors" deviceset="M02" device="PTH" value="m"/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M05" device="LOCK"/>
-<part name="R12" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R13" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R12" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="2.2K"/>
+<part name="R13" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="2.2K"/>
 <part name="V50" library="testpad" deviceset="PTR1" device="PAD1-13"/>
 <part name="GND" library="testpad" deviceset="PTR1" device="PAD1-13" value="GND"/>
 <part name="V33" library="testpad" deviceset="PTR1" device="PAD1-13"/>
 </parts>
 <sheets>
 <sheet>
+<description>Main</description>
 <plain>
 </plain>
 <instances>
