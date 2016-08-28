@@ -11756,7 +11756,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="D8" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD"/>
 <part name="D9" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD"/>
 <part name="SG1" library="SparkFun-Electromechanical" deviceset="BUZZER" device="PTH"/>
-<part name="SG2" library="SparkFun-Electromechanical" deviceset="BUZZER" device="PTH"/>
+<part name="1" library="SparkFun-Electromechanical" deviceset="BUZZER" device="PTH"/>
 <part name="B0" library="PatternAgents-TouchWidgets" deviceset="BUTTON_PASSIVE" device="12MM"/>
 <part name="LCD" library="SparkFun-Connectors" deviceset="M04" device="JST-PTH"/>
 <part name="B1" library="PatternAgents-TouchWidgets" deviceset="BUTTON_PASSIVE" device="12MM"/>
@@ -11794,7 +11794,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="U1" gate="U1" x="38.1" y="50.8"/>
 <instance part="J1" gate="G$1" x="48.26" y="99.06"/>
 <instance part="SG1" gate="G$1" x="88.9" y="88.9" rot="R90"/>
-<instance part="SG2" gate="G$1" x="129.54" y="88.9" rot="R90"/>
+<instance part="1" gate="G$1" x="129.54" y="88.9" rot="R90"/>
 <instance part="B0" gate="B1" x="129.54" y="30.48" rot="R180"/>
 <instance part="LCD" gate="G$1" x="81.28" y="0"/>
 <instance part="B1" gate="B1" x="129.54" y="58.42" rot="R180"/>
@@ -11865,7 +11865,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="55.88" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SG2" gate="G$1" pin="2"/>
+<pinref part="1" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="91.44" x2="142.24" y2="91.44" width="0.1524" layer="91"/>
 <label x="134.62" y="91.44" size="1.778" layer="95"/>
 </segment>
@@ -11943,7 +11943,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="93.98" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SG2" gate="G$1" pin="1"/>
+<pinref part="1" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="88.9" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
 <label x="134.62" y="88.9" size="1.778" layer="95"/>
 </segment>
