@@ -537,32 +537,34 @@ function getElementsByClass(rootNode, elemName, className)
 <h1> Static Timing Analysis </h1>
 <table class="property">
 <tr> <td class="prop"> Project :</td>
-<td class="proptext"> MusicTest</td></tr>
+<td class="proptext"> test-acquire</td></tr>
 <tr> <td class="prop"> Build Time :</td>
-<td class="proptext"> 09/07/16 09:52:25</td></tr>
+<td class="proptext"> 09/05/16 13:18:25</td></tr>
 <tr> <td class="prop"> Device :</td>
-<td class="proptext"> CY8C4247AZI-M485</td></tr>
+<td class="proptext"> CYBLE-014008-00</td></tr>
 <tr> <td class="prop"> Temperature :</td>
 <td class="proptext"> -40C - 85C</td></tr>
-<tr> <td class="prop"> VDDA_0 :</td>
+<tr> <td class="prop"> VDDA :</td>
 <td class="proptext"> 3.30</td></tr>
 <tr> <td class="prop"> VDDA_CTB :</td>
 <td class="proptext"> 3.30</td></tr>
-<tr> <td class="prop"> VDDD :</td>
-<td class="proptext"> 3.30</td></tr>
 <tr> <td class="prop"> VDDD_0 :</td>
 <td class="proptext"> 3.30</td></tr>
-<tr> <td class="prop"> VDDD_1 :</td>
-<td class="proptext"> 3.30</td></tr>
-<tr> <td class="prop"> VDDIO :</td>
+<tr> <td class="prop"> VDDIO_0 :</td>
 <td class="proptext"> 3.30</td></tr>
 <tr> <td class="prop"> VDDIO_1 :</td>
 <td class="proptext"> 3.30</td></tr>
 <tr> <td class="prop"> VDDIO_2 :</td>
 <td class="proptext"> 3.30</td></tr>
-<tr> <td class="prop"> VDDIO_A :</td>
+<tr> <td class="prop"> VDDR_BGLS :</td>
 <td class="proptext"> 3.30</td></tr>
-<tr> <td class="prop"> VDDIO_A_1 :</td>
+<tr> <td class="prop"> VDDR_HF :</td>
+<td class="proptext"> 3.30</td></tr>
+<tr> <td class="prop"> VDDR_HLS :</td>
+<td class="proptext"> 3.30</td></tr>
+<tr> <td class="prop"> VDDR_LF :</td>
+<td class="proptext"> 3.30</td></tr>
+<tr> <td class="prop"> VDDR_SYN :</td>
 <td class="proptext"> 3.30</td></tr>
 <tr> <td class="prop"> Voltage :</td>
 <td class="proptext"> 3.3</td></tr>
@@ -601,10 +603,10 @@ Clock Summary Section</span>
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">Clock_1(FFB)</td>
- <td class = "text_info">Clock_1(FFB)</td>
- <td class = "number">12.000&nbsp;MHz</td>
- <td class = "number">12.000&nbsp;MHz</td>
+ <td class = "text_info">CyECO</td>
+ <td class = "text_info">CyECO</td>
+ <td class = "number">24.000&nbsp;MHz</td>
+ <td class = "number">24.000&nbsp;MHz</td>
  <td class = "number"> N/A </td>
  <td class = "text_info"> </td>
 </tr>
@@ -613,22 +615,6 @@ Clock Summary Section</span>
  <td class = "text_info">CyHFCLK</td>
  <td class = "number">48.000&nbsp;MHz</td>
  <td class = "number">48.000&nbsp;MHz</td>
- <td class = "number"> N/A </td>
- <td class = "text_info"> </td>
-</tr>
-<tr> 
- <td class = "text_info">Clock_1</td>
- <td class = "text_info">CyHFCLK</td>
- <td class = "number">12.000&nbsp;MHz</td>
- <td class = "number">12.000&nbsp;MHz</td>
- <td class = "number"> N/A </td>
- <td class = "text_info"> </td>
-</tr>
-<tr> 
- <td class = "text_info">UART_SCBCLK</td>
- <td class = "text_info">CyHFCLK</td>
- <td class = "number">1.371&nbsp;MHz</td>
- <td class = "number">1.371&nbsp;MHz</td>
  <td class = "number"> N/A </td>
  <td class = "text_info"> </td>
 </tr>
@@ -651,8 +637,8 @@ Clock Summary Section</span>
 <tr> 
  <td class = "text_info">CyLFCLK</td>
  <td class = "text_info">CyLFCLK</td>
- <td class = "number">32.000&nbsp;kHz</td>
- <td class = "number">32.000&nbsp;kHz</td>
+ <td class = "number">32.768&nbsp;kHz</td>
+ <td class = "number">32.768&nbsp;kHz</td>
  <td class = "number"> N/A </td>
  <td class = "text_info"> </td>
 </tr>
@@ -673,111 +659,15 @@ Clock Summary Section</span>
  <td class = "text_info"> </td>
 </tr>
 <tr> 
- <td class = "text_info">UART_SCBCLK(FFB)</td>
- <td class = "text_info">UART_SCBCLK(FFB)</td>
- <td class = "number">1.371&nbsp;MHz</td>
- <td class = "number">1.371&nbsp;MHz</td>
+ <td class = "text_info">CyWCO</td>
+ <td class = "text_info">CyWCO</td>
+ <td class = "number">32.768&nbsp;kHz</td>
+ <td class = "number">32.768&nbsp;kHz</td>
  <td class = "number"> N/A </td>
  <td class = "text_info"> </td>
 </tr>
 </tbody>
  </table> 
-</div>
-</div>
-<div class="sta_sec" >
-<div>
-<a href="#" style="text-decoration: none; color: inherit;">
-<span class="sec_head"><span style="font-family: monospace;">+</span>
-Clock To Output Section</span>
-</a>
-</div><div class="sta_secbody"><div class="sta_sec" >
-<div>
-<a href="#" style="text-decoration: none; color: inherit;">
-<span class="sec_head"><span style="font-family: monospace;">+</span>
-Clock_1(FFB)</span>
-</a>
-</div><div class="sta_secbody"><table class="sta_tscs">
- <thead> 
-<tr> 
-<th>Source</th>
-<th>Destination</th>
-<th>Delay (ns)</th>
-</tr>
-</thead> 
-<tbody>
-<tr> 
- <td class = "text_info">\PWM:cy_m0s8_tcpwm_1\/line_out</td>
- <td class = "text_info">Pin_1(0)_PAD</td>
- <td class = "number">19.287</td>
-</tr>
-<tr class="sta_path">
-<td class="sta_path"  colspan="3">
-<table class="sta_path">
- <thead> 
-<tr> 
-<th>Type</th>
-<th>Location</th>
-<th>Fanout</th>
-<th>Instance/Net</th>
-<th>Source</th>
-<th>Dest</th>
-<th>Delay (ns)</th>
-</tr>
-</thead> 
-<tbody>
-<tr> 
- <td class = "text_info">m0s8tcpwmcell</td>
- <td class = "text_info">F(TCPWM,0)</td>
- <td class = "number">1</td>
- <td class = "text_info">\PWM:cy_m0s8_tcpwm_1\</td>
- <td class = "text_info">\PWM:cy_m0s8_tcpwm_1\/clock</td>
- <td class = "text_info">\PWM:cy_m0s8_tcpwm_1\/line_out</td>
- <td class = "number">0.000</td>
-</tr>
-<tr> 
- <td class = "text_info">Route</td>
- <td class = "text_info"></td>
- <td class = "number">1</td>
- <td class = "text_info">Net_10</td>
- <td class = "text_info">\PWM:cy_m0s8_tcpwm_1\/line_out</td>
- <td class = "text_info">Pin_1(0)/pin_input</td>
- <td class = "number">2.937</td>
-</tr>
-<tr> 
- <td class = "text_info">iocell1</td>
- <td class = "text_info">P2[0]</td>
- <td class = "number">1</td>
- <td class = "text_info">Pin_1(0)</td>
- <td class = "text_info">Pin_1(0)/pin_input</td>
- <td class = "text_info">Pin_1(0)/pad_out</td>
- <td class = "number">16.350</td>
-</tr>
-<tr> 
- <td class = "text_info">Route</td>
- <td class = "text_info"></td>
- <td class = "number">1</td>
- <td class = "text_info">Pin_1(0)_PAD</td>
- <td class = "text_info">Pin_1(0)/pad_out</td>
- <td class = "text_info">Pin_1(0)_PAD</td>
- <td class = "number">0.000</td>
-</tr>
-<tr> 
- <td class = "text_info">Clock</td>
- <td class = "text_info"> </td>
- <td class = "text_info"></td>
- <td class = "text_info"></td>
- <td class = "text_info"></td>
- <td class = "text_info">Clock path delay</td>
- <td class = "number">0.000</td>
-</tr>
-</tbody>
- </table> 
-</td>
-</tr>
-</tbody>
- </table> 
-</div>
-</div>
 </div>
 </div>
 </body>
