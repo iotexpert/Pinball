@@ -5,17 +5,15 @@
 #define NOSONG 0xFF
 #define PWMDIVIDER (128)
 #define CLOCK (12000000)
-#define BPM (25)
 
-int silenceCount;
-int nextNote=0;
-int currentSong=NOSONG; // no song
-int noteDelayCount=0;
+static int Music_BPM = 25;
+static int Music_nextNote=0;
+static int Music_currentSong=NOSONG; // no song
+static int Music_noteDelayCount=0;
+static int Music_silenceCount=0;
 
-#define DELAY_NOTE 32
-
-Note maryHadALittleLamb[] = {
-    { 14, 0 },
+static Note Music_twinkleLittleStar[] = {
+    { 14, 25 },
     { NoteC4,QUARTER_NOTE},
     { NoteC4,QUARTER_NOTE},
     { NoteG4,QUARTER_NOTE},
@@ -32,48 +30,45 @@ Note maryHadALittleLamb[] = {
     { NoteC4,HALF_NOTE}
 };
 
-int newNoteFlag=0;
+static Note *Music_Songs[] = { Music_twinkleLittleStar, 0 , 0, 0 }; // up to 4 songs
 
-Note *Songs[] = { maryHadALittleLamb };
-int Music_GetNote() { return nextNote; }
-char buff[128];
+int Music_GetNote()
+{
+    return Music_nextNote;
+}
 
 void Music_NextNote()
 {
     // calculate the PWM Period and Compare
-    
-   
-    newNoteFlag = nextNote;
-    nextnotepin_Write(!nextnotepin_Read());
     PWM_Stop();
-    int period = CLOCK/PWMDIVIDER/Songs[currentSong][nextNote].frequency;
+    int period = CLOCK/PWMDIVIDER/Music_Songs[Music_currentSong][Music_nextNote].frequency;
     PWM_WriteCounter(period);
     PWM_WritePeriod(period);
     PWM_WriteCompare(period>>1);
     PWM_Start();
-    noteDelayCount = 60*1000/BPM * Songs[currentSong][nextNote].duration / 64;
-    silenceCount = noteDelayCount/5;
+    Music_noteDelayCount = 60*1000/Music_BPM * Music_Songs[Music_currentSong][Music_nextNote].duration / 64;
+    Music_silenceCount = Music_noteDelayCount/5;
     
-    nextNote = nextNote + 1;
+    Music_nextNote += 1;
     
-    if(nextNote > Songs[currentSong][0].frequency)
-        nextNote = 1;
+    if(Music_nextNote > Music_Songs[Music_currentSong][0].frequency)
+        Music_nextNote = 1;
     
 }
 
 void Music_SysTickCallBack()
 {
-    if(currentSong == NOSONG)
+    if(Music_currentSong == NOSONG)
         return;
     
-    noteDelayCount -= 1;
+    Music_noteDelayCount -= 1;
     
-    if(noteDelayCount == silenceCount)
+    if(Music_noteDelayCount == Music_silenceCount)
     {
         PWM_Stop();
     }
     
-    if(noteDelayCount == 0)
+    if(Music_noteDelayCount == 0)
         Music_NextNote();
  
 }
@@ -86,20 +81,28 @@ void Music_Start(int sysTickNumber)
 
 void Music_Stop()
 {
-    currentSong = NOSONG;
+    Music_currentSong = NOSONG;
     PWM_Stop();
 }
 
 
 void Music_PlaySong(int number)
 {
-    currentSong = number;
-    nextNote = 1;
+    Music_currentSong = number;
+    Music_BPM = Music_Songs[Music_currentSong][0].duration;
+    Music_nextNote = 1;
     Music_NextNote();
 }
 
 void Music_SetBPM(int beatsPerMinute)
 {
-    (void)beatsPerMinute;
+    if(beatsPerMinute)
+        Music_BPM = beatsPerMinute;
+    else
+        Music_BPM = Music_Songs[Music_currentSong][0].duration; // set it back to default
 }
 
+void Music_AddSong(int number,Note song[])
+{
+    Music_Songs[number] = song;
+}
