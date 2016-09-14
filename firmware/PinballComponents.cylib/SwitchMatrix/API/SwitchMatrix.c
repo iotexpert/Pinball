@@ -83,7 +83,7 @@ void `$INSTANCE_NAME`_SetInterruptMode(int row,int col,`$INSTANCE_NAME`_Inter_Mo
  *     This function is called by the systick timer and reads the vaule of the switchs
  * calls the interrupt if requied based on the interrupt
 \*****************************************************************************/
-void `$INSTANCE_NAME`_SwitchCallBack()
+static void `$INSTANCE_NAME`_SwitchCallBack()
 {
     
     static int count=0;

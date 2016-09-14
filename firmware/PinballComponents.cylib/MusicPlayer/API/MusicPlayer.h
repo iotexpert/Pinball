@@ -1,10 +1,12 @@
 #ifndef `$INSTANCE_NAME`_MUSIC_PLAYER_H
 #define `$INSTANCE_NAME`_MUSIC_PLAYER_H
- 
+
+// This #define turns on the APIs for the 2nd PWM channel
+`=($TwoChannels)?"#define `$INSTANCE_NAME`_TWOCHANNELS":""`
     
 typedef struct Note {
     int frequency;
-    int duration; // duration in 64's of a note
+    int duration; // duration in 64's of a note aka whole note = 64
 } Note;
 
 #define NoteA4 (440)
@@ -19,10 +21,25 @@ typedef struct Note {
 #define HALF_NOTE (32)
 #define QUARTER_NOTE (16)
 
-void `$INSTANCE_NAME`_Start(int sysTickNumber);
-void `$INSTANCE_NAME`_PlaySong(int number);
-void `$INSTANCE_NAME`_Stop();
-void `$INSTANCE_NAME`_SetBPM(int beatsPerMinute);
-int `$INSTANCE_NAME`_GetNote();
+typedef enum `$INSTANCE_NAME`_ErrorCodes {
+    OK,
+    NO_SONG,
+    INVALID_SONG_NUMBER,
+    OUT_OF_RANGE
     
+}`$INSTANCE_NAME`_ErrorCodes;
+
+void `$INSTANCE_NAME`_Start(int sysTickNumber);
+`$INSTANCE_NAME`_ErrorCodes `$INSTANCE_NAME`_PlaySong(int number,int bpm);
+void `$INSTANCE_NAME`_Stop();
+`$INSTANCE_NAME`_ErrorCodes `$INSTANCE_NAME`_SetBPM(int beatsPerMinute);
+int `$INSTANCE_NAME`_GetNote();
+`$INSTANCE_NAME`_ErrorCodes `$INSTANCE_NAME`_AddSong(int number,Note song[]);
+
+// If the 2nd channel is on then turn on the buzzing APIs
+#ifdef `$INSTANCE_NAME`_TWOCHANNELS
+`$INSTANCE_NAME`_ErrorCodes `$INSTANCE_NAME`_BuzzOn(int frequency,int timeMs);
+void `$INSTANCE_NAME`_BuzzOff();
+#endif
+
 #endif   

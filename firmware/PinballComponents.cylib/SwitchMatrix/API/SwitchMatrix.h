@@ -3,7 +3,7 @@
 #define `$INSTANCE_NAME`_SWITCHMATRIX_H    
 
 
-#define `$INSTANCE_NAME`_MASK_TYPE uint32_t
+#define `$INSTANCE_NAME`_MASK_TYPE uint64_t
     
 typedef enum `$INSTANCE_NAME`_Inter_Mode {
     NONE,

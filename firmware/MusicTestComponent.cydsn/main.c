@@ -1,66 +1,51 @@
-/* ========================================
- *
- * Copyright YOUR COMPANY, THE YEAR
- * All Rights Reserved
- * UNPUBLISHED, LICENSED SOFTWARE.
- *
- * CONFIDENTIAL AND PROPRIETARY INFORMATION
- * WHICH IS THE PROPERTY OF your company.
- *
- * ========================================
-*/
-#include <stdio.h>
 #include <project.h>
-
+#include <stdio.h>
 char buff[128];
+
+static Note scale[] = {
+    { 7, 25 },
+    { NoteA4,QUARTER_NOTE},
+    { NoteB4,QUARTER_NOTE},
+    { NoteC4,QUARTER_NOTE},
+    { NoteD4,QUARTER_NOTE},
+    { NoteE4,QUARTER_NOTE},
+    { NoteF4,QUARTER_NOTE},
+    { NoteG4,QUARTER_NOTE},
+};
 
 int main()
 {
     char c;    
-    int note=0; // current Notes
+    int note=0; // current note
     int printFlag=0; // if set to 0 it prints the notes when they change
  
-    CyGlobalIntEnable; /* Enable global interrupts. */
+    CyGlobalIntEnable;
     CySysTickStart();
-    
     Music_Start(0);
- 
     UART_Start();
-   
-    sprintf(buff,"Started\n");
-    UART_UartPutString(buff);
+    UART_UartPutString("Started\n");
 
+    Music_AddSong(1,scale);
+    
     for(;;)
     {
         c = UART_UartGetChar();
         switch(c)
         {
+            #ifdef Music_TWOCHANNELS
+            case 'b': Music_BuzzOn(300,0);    break; // turn on the buzzer 1
+            case 'B': Music_BuzzOff();        break; // turn off the buzzer 1
+            case 'n': Music_BuzzOn(200,500);  break; // turn on the buzzer for 500ms
+            #endif
+            case 'p': printFlag=0;            break; // turn off the note printer
+            case 'P': printFlag = 1;          break; // turn on the note printer
+            case 't': Music_SetBPM(0);        break; // Put the song back to the default
+            case 'T': Music_SetBPM(60);       break; // Put the current song to 60BPM
+            case '1': Music_PlaySong(0,0);    break; // Play the 1st Song
+            case '2': Music_PlaySong(1,0);    break; // Play the 2nd Song
             case 's':
-                UART_UartPutString("Start\n");
-                Music_PlaySong(0);
-            break;
-            case 'S':
                 UART_UartPutString("Stop\n");
                 Music_Stop();
-            break;
-            case 'p':
-                printFlag=0;
-                break;
-            case 'P':
-                printFlag = 1;
-            break;
-            case 't': // put it back to the default
-                Music_SetBPM(0);
-            break;
-            case 'T':
-                Music_SetBPM(60);
-            break;
-                
-            case '1':
-                Music_PlaySong(0);
-            break;
-            case '2':
-                Music_PlaySong(1);
             break;
         }
         
@@ -72,4 +57,3 @@ int main()
         }
     }
 }
-
