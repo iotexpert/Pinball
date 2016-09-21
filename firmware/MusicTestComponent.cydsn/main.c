@@ -2,8 +2,7 @@
 #include <stdio.h>
 char buff[128];
 
-static Note scale[] = {
-    { 7, 25 },
+static Note scaleNotes[] = {
     { NoteA4,QUARTER_NOTE},
     { NoteB4,QUARTER_NOTE},
     { NoteC4,QUARTER_NOTE},
@@ -11,6 +10,12 @@ static Note scale[] = {
     { NoteE4,QUARTER_NOTE},
     { NoteF4,QUARTER_NOTE},
     { NoteG4,QUARTER_NOTE},
+};
+
+static Song scale = {
+    .numNotes = 7,
+    .bpm = 40,
+    .notes = scaleNotes
 };
 
 int main()
@@ -25,7 +30,7 @@ int main()
     UART_Start();
     UART_UartPutString("Started\n");
 
-    Music_AddSong(1,scale);
+    Music_AddSong(1,&scale);
     
     for(;;)
     {

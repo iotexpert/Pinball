@@ -29,12 +29,18 @@ typedef enum `$INSTANCE_NAME`_ErrorCodes {
     
 }`$INSTANCE_NAME`_ErrorCodes;
 
+typedef struct Song {
+    int numNotes;
+    int bpm;
+    Note *notes;
+} Song;
+
 void `$INSTANCE_NAME`_Start(int sysTickNumber);
 `$INSTANCE_NAME`_ErrorCodes `$INSTANCE_NAME`_PlaySong(int number,int bpm);
 void `$INSTANCE_NAME`_Stop();
 `$INSTANCE_NAME`_ErrorCodes `$INSTANCE_NAME`_SetBPM(int beatsPerMinute);
 int `$INSTANCE_NAME`_GetNote();
-`$INSTANCE_NAME`_ErrorCodes `$INSTANCE_NAME`_AddSong(int number,Note song[]);
+`$INSTANCE_NAME`_ErrorCodes `$INSTANCE_NAME`_AddSong(int number,Song *song);
 
 // If the 2nd channel is on then turn on the buzzing APIs
 #ifdef `$INSTANCE_NAME`_TWOCHANNELS
