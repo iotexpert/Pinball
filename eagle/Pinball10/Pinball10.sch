@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11732,7 +11732,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="power" width="1.016" drill="0">
+<class number="1" name="power" width="0.1524" drill="0">
 </class>
 </classes>
 <parts>
@@ -11778,7 +11778,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R11" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="TAC_SWITCH" device="SMD" value="TAC_SWITCHSMD"/>
 <part name="M0+" library="SparkFun-Connectors" deviceset="M02" device="PTH" value="m"/>
-<part name="M1+" library="SparkFun-Connectors" deviceset="M02" device="PTH" value="m"/>
+<part name="M1+" library="SparkFun-Connectors" deviceset="M02" device="PTH" value="M02PTH"/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M05" device="LOCK"/>
 <part name="R12" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="2.2K"/>
 <part name="R13" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="2.2K"/>
