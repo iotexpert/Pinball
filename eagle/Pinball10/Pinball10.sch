@@ -11487,19 +11487,18 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pad name="VDD" x="12.34" y="25.6" drill="0.8"/>
 <hole x="3.3" y="2.05" drill="2.88"/>
 <wire x1="0" y1="27.3" x2="27.3" y2="27.3" width="0.127" layer="21"/>
-<wire x1="27.3" y1="27.3" x2="27.3" y2="0" width="0.127" layer="21"/>
+<wire x1="27.3" y1="27.3" x2="27.3" y2="0" width="0.127" layer="27"/>
 <wire x1="27.3" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
 <wire x1="0" y1="0" x2="0" y2="27.3" width="0.127" layer="21"/>
 <hole x="24" y="2.05" drill="2.88"/>
-<hole x="3.3" y="25.25" drill="1"/>
 <hole x="24" y="25.25" drill="2.88"/>
 <hole x="3.3" y="25.25" drill="2.88"/>
-<text x="10.515" y="20.8682" size="1.27" layer="21" font="vector" ratio="15" rot="R90">GND</text>
-<text x="13.2074" y="20.792" size="1.27" layer="21" font="vector" ratio="15" rot="R90">VDD</text>
-<text x="15.8744" y="20.6904" size="1.27" layer="21" font="vector" ratio="15" rot="R90">SDA</text>
-<text x="18.262" y="20.7412" size="1.27" layer="21" font="vector" ratio="15" rot="R90">SCL</text>
-<text x="11.1146" y="16.3328" size="1.27" layer="21" font="vector" ratio="15">U8G</text>
-<text x="9.362" y="13.7166" size="1.27" layer="21" font="vector" ratio="15">SSD1306</text>
+<text x="10.515" y="20.8682" size="1.27" layer="27" font="vector" ratio="15" rot="R90">GND</text>
+<text x="13.2074" y="20.792" size="1.27" layer="27" font="vector" ratio="15" rot="R90">VDD</text>
+<text x="18.4144" y="20.6904" size="1.27" layer="27" font="vector" ratio="15" rot="R90">SDA</text>
+<text x="15.722" y="20.7412" size="1.27" layer="27" font="vector" ratio="15" rot="R90">SCL</text>
+<text x="12.3846" y="7.4428" size="1.27" layer="21" font="vector" ratio="15">U8G</text>
+<text x="10.632" y="4.8266" size="1.27" layer="21" font="vector" ratio="15">SSD1306</text>
 </package>
 </packages>
 <symbols>
@@ -11528,6 +11527,122 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <connect gate="G$1" pin="SCL" pad="SCL"/>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
 <connect gate="G$1" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="jump-0r-smd">
+<description>Soldering jumper and bridges</description>
+<packages>
+<package name="A0R-JMP">
+<description>&lt;b&gt;0R Jumper Variant A&lt;/b&gt;&lt;p&gt;
+chip 0805</description>
+<wire x1="0.635" y1="1.26" x2="0.635" y2="0.44" width="0.1524" layer="51"/>
+<wire x1="-0.635" y1="1.26" x2="-0.635" y2="0.44" width="0.1524" layer="51"/>
+<smd name="1" x="0" y="1.7" dx="1.3" dy="1.5" layer="1" rot="R270"/>
+<smd name="2" x="0" y="0" dx="1.3" dy="1.5" layer="1" rot="R270"/>
+<smd name="3" x="0" y="-1.7" dx="1.3" dy="1.5" layer="1" rot="R270"/>
+<text x="-0.762" y="2.716" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.762" y="-3.986" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.3235" y1="-0.5814" x2="0.3265" y2="0.8186" layer="51" rot="R270"/>
+<rectangle x1="-0.3235" y1="0.8918" x2="0.3265" y2="2.2918" layer="51" rot="R270"/>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+</package>
+<package name="B0R-JMP">
+<description>&lt;b&gt;0R Jumper Variant B&lt;/b&gt;&lt;p&gt;
+chip 0805</description>
+<wire x1="-0.635" y1="-0.44" x2="-0.635" y2="-1.26" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="-1.26" x2="0.635" y2="-0.44" width="0.1524" layer="51"/>
+<smd name="1" x="0" y="1.7" dx="1.3" dy="1.5" layer="1" rot="R270"/>
+<smd name="2" x="0" y="0" dx="1.3" dy="1.5" layer="1" rot="R270"/>
+<smd name="3" x="0" y="-1.7" dx="1.3" dy="1.5" layer="1" rot="R270"/>
+<rectangle x1="-0.3235" y1="-2.2814" x2="0.3265" y2="-0.8814" layer="51" rot="R270"/>
+<rectangle x1="-0.3235" y1="-0.8082" x2="0.3265" y2="0.5918" layer="51" rot="R270"/>
+</package>
+<package name="C0R-JMP">
+<description>&lt;b&gt;0R Jumper Variant C&lt;/b&gt;&lt;p&gt;
+Solder type</description>
+<wire x1="0.61" y1="0.66" x2="0.61" y2="0.34" width="0.1524" layer="51"/>
+<wire x1="-0.61" y1="0.66" x2="-0.61" y2="0.34" width="0.1524" layer="51"/>
+<smd name="1" x="0" y="0.938" dx="0.8" dy="1" layer="1" roundness="100"/>
+<smd name="2" x="0" y="0" dx="1" dy="0.8" layer="1" roundness="50"/>
+<smd name="3" x="0" y="-0.938" dx="0.8" dy="1" layer="1" roundness="100"/>
+<text x="-0.762" y="2.716" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.762" y="-3.986" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.3235" y1="-0.6814" x2="0.3265" y2="0.7186" layer="51" rot="R270"/>
+<rectangle x1="-0.3235" y1="0.2338" x2="0.3265" y2="1.6338" layer="51" rot="R270"/>
+</package>
+</packages>
+<symbols>
+<symbol name="0RJM">
+<wire x1="0" y1="2.54" x2="0" y2="1.778" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="-0.254" y1="1.524" x2="0.254" y2="1.524" width="0.508" layer="94" curve="-180" cap="flat"/>
+<wire x1="-0.254" y1="-1.016" x2="0.254" y2="-1.016" width="0.508" layer="94" curve="-180" cap="flat"/>
+<wire x1="0.254" y1="1.016" x2="-0.254" y2="1.016" width="0.508" layer="94" curve="-180" cap="flat"/>
+<wire x1="0.254" y1="-1.524" x2="-0.254" y2="-1.524" width="0.508" layer="94" curve="-180" cap="flat"/>
+<text x="2.54" y="1.27" size="1.778" layer="95">&gt;NAME</text>
+<pin name="2" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="0" y="2.54" visible="off" length="point" direction="pas" rot="R270"/>
+<pin name="3" x="0" y="-2.54" visible="off" length="point" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="JMP">
+<wire x1="0.762" y1="-0.254" x2="0.508" y2="-0.254" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.254" y1="-0.254" x2="-0.254" y2="-0.254" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-0.508" y1="-0.254" x2="-0.762" y2="-0.254" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.762" y1="-2.286" x2="0.508" y2="-2.286" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.254" y1="-2.286" x2="-0.254" y2="-2.286" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-0.508" y1="-2.286" x2="-0.762" y2="-2.286" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.762" y1="-0.254" x2="0.762" y2="-0.508" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.762" y1="-0.762" x2="0.762" y2="-1.016" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.762" y1="-1.524" x2="0.762" y2="-1.778" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.762" y1="-2.032" x2="0.762" y2="-2.286" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-0.762" y1="-2.286" x2="-0.762" y2="-2.032" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-0.762" y1="-1.778" x2="-0.762" y2="-1.524" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-0.762" y1="-1.016" x2="-0.762" y2="-0.762" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-0.762" y1="-0.508" x2="-0.762" y2="-0.254" width="0.1524" layer="94" style="shortdash"/>
+<rectangle x1="-0.508" y1="-2.032" x2="0.508" y2="-0.508" layer="94" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="0R-JUMP" prefix="JMP">
+<description>&lt;b&gt;SMD 0R 0805 Jumper&lt;/b&gt;&lt;p&gt;</description>
+<gates>
+<gate name="-0R" symbol="0RJM" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="JMP" x="-2.54" y="2.54" addlevel="always"/>
+</gates>
+<devices>
+<device name="A" package="A0R-JMP">
+<connects>
+<connect gate="-0R" pin="1" pad="1"/>
+<connect gate="-0R" pin="2" pad="2"/>
+<connect gate="-0R" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="B" package="B0R-JMP">
+<connects>
+<connect gate="-0R" pin="1" pad="1"/>
+<connect gate="-0R" pin="2" pad="2"/>
+<connect gate="-0R" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="C" package="C0R-JMP">
+<connects>
+<connect gate="-0R" pin="1" pad="1"/>
+<connect gate="-0R" pin="2" pad="2"/>
+<connect gate="-0R" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11595,6 +11710,10 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="X1" library="con-hirose" deviceset="MINI-USB-SHIELD-" device="UX60-MB-5S8"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 <part name="U$2" library="IOTExpert" deviceset="U8G-096-OLED" device=""/>
+<part name="JMP1" library="jump-0r-smd" deviceset="0R-JUMP" device="B"/>
+<part name="JMP2" library="jump-0r-smd" deviceset="0R-JUMP" device="B"/>
+<part name="JMP3" library="jump-0r-smd" deviceset="0R-JUMP" device="B"/>
+<part name="JMP4" library="jump-0r-smd" deviceset="0R-JUMP" device="B"/>
 </parts>
 <sheets>
 <sheet>
@@ -11616,6 +11735,14 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <instance part="R13" gate="G$1" x="111.76" y="76.2"/>
 <instance part="X1" gate="G$1" x="45.72" y="99.06"/>
 <instance part="U$2" gate="G$1" x="27.94" y="5.08"/>
+<instance part="JMP1" gate="-0R" x="-48.26" y="78.74"/>
+<instance part="JMP1" gate="G$2" x="-48.26" y="81.28"/>
+<instance part="JMP2" gate="-0R" x="-48.26" y="68.58"/>
+<instance part="JMP2" gate="G$2" x="-48.26" y="68.58"/>
+<instance part="JMP3" gate="-0R" x="-48.26" y="58.42"/>
+<instance part="JMP3" gate="G$2" x="-48.26" y="60.96"/>
+<instance part="JMP4" gate="-0R" x="-48.26" y="48.26"/>
+<instance part="JMP4" gate="G$2" x="-48.26" y="50.8"/>
 </instances>
 <busses>
 </busses>
@@ -11769,9 +11896,14 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <junction x="144.78" y="7.62"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="GND"/>
-<wire x1="-5.08" y1="22.86" x2="-25.4" y2="22.86" width="0.1524" layer="91"/>
-<label x="-22.86" y="22.86" size="1.778" layer="95"/>
+<pinref part="JMP1" gate="-0R" pin="1"/>
+<wire x1="-48.26" y1="81.28" x2="-55.88" y2="81.28" width="0.1524" layer="91"/>
+<label x="-55.88" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JMP2" gate="-0R" pin="1"/>
+<wire x1="-48.26" y1="71.12" x2="-55.88" y2="71.12" width="0.1524" layer="91"/>
+<label x="-55.88" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="M1R" class="0">
@@ -11903,6 +12035,16 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="116.84" y1="76.2" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
 <label x="116.84" y="76.2" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JMP1" gate="-0R" pin="3"/>
+<wire x1="-48.26" y1="76.2" x2="-55.88" y2="76.2" width="0.1524" layer="91"/>
+<label x="-55.88" y="76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JMP2" gate="-0R" pin="3"/>
+<wire x1="-48.26" y1="66.04" x2="-55.88" y2="66.04" width="0.1524" layer="91"/>
+<label x="-55.88" y="66.04" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -11916,9 +12058,14 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <label x="137.16" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="SCL"/>
-<wire x1="-5.08" y1="12.7" x2="-25.4" y2="12.7" width="0.1524" layer="91"/>
-<label x="-22.86" y="12.7" size="1.778" layer="95"/>
+<pinref part="JMP3" gate="-0R" pin="1"/>
+<wire x1="-48.26" y1="60.96" x2="-55.88" y2="60.96" width="0.1524" layer="91"/>
+<label x="-55.88" y="60.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JMP4" gate="-0R" pin="1"/>
+<wire x1="-48.26" y1="50.8" x2="-55.88" y2="50.8" width="0.1524" layer="91"/>
+<label x="-55.88" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -11933,9 +12080,14 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <label x="93.98" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="SDA"/>
-<wire x1="-5.08" y1="7.62" x2="-25.4" y2="7.62" width="0.1524" layer="91"/>
-<label x="-22.86" y="7.62" size="1.778" layer="95"/>
+<pinref part="JMP3" gate="-0R" pin="3"/>
+<wire x1="-48.26" y1="55.88" x2="-55.88" y2="55.88" width="0.1524" layer="91"/>
+<label x="-55.88" y="55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JMP4" gate="-0R" pin="3"/>
+<wire x1="-48.26" y1="45.72" x2="-55.88" y2="45.72" width="0.1524" layer="91"/>
+<label x="-55.88" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ACCELINT" class="0">
@@ -11971,11 +12123,52 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="JP3" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="VDD" class="0">
+<net name="P1" class="1">
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<wire x1="-5.08" y1="22.86" x2="-25.4" y2="22.86" width="0.1524" layer="91"/>
+<label x="-22.86" y="22.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JMP1" gate="-0R" pin="2"/>
+<wire x1="-45.72" y1="78.74" x2="-33.02" y2="78.74" width="0.1524" layer="91"/>
+<label x="-43.18" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="P2" class="1">
 <segment>
 <pinref part="U$2" gate="G$1" pin="VDD"/>
 <wire x1="-5.08" y1="17.78" x2="-25.4" y2="17.78" width="0.1524" layer="91"/>
 <label x="-22.86" y="17.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JMP2" gate="-0R" pin="2"/>
+<wire x1="-45.72" y1="68.58" x2="-33.02" y2="68.58" width="0.1524" layer="91"/>
+<label x="-43.18" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="D1" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="SCL"/>
+<wire x1="-5.08" y1="12.7" x2="-25.4" y2="12.7" width="0.1524" layer="91"/>
+<label x="-22.86" y="12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JMP3" gate="-0R" pin="2"/>
+<wire x1="-45.72" y1="58.42" x2="-33.02" y2="58.42" width="0.1524" layer="91"/>
+<label x="-43.18" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="D2" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="SDA"/>
+<wire x1="-5.08" y1="7.62" x2="-25.4" y2="7.62" width="0.1524" layer="91"/>
+<label x="-22.86" y="7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JMP4" gate="-0R" pin="2"/>
+<wire x1="-45.72" y1="48.26" x2="-33.02" y2="48.26" width="0.1524" layer="91"/>
+<label x="-43.18" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
