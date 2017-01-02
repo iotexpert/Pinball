@@ -107,10 +107,11 @@ static void `$INSTANCE_NAME`_RunStateMachine()
     // This is essentially a prescaler
     if(`$INSTANCE_NAME`_sysTickCount % `$INSTANCE_NAME`_REFRESH) 
         return;
-    IntService_Write(1);
+    
+    //IntService_Write(1);  // This was put here to see how long this takes by toggling a pin
     `$INSTANCE_NAME`_UpdateBlinkingLeds();
     `$INSTANCE_NAME`_UpdateLeds();
-    IntService_Write(0);
+    //IntService_Write(0); // This was put here to see how long this takes by toggling a pin
 }
 
 // This is the main start function
